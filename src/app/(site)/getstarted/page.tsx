@@ -1,5 +1,5 @@
 import Image from "next/image";
-import SectionTitle from "@/components/Common/SectionTitle";
+import SectionTitle from "../Common/SectionTitle";
 
 const getstarted = () => {
   return (
@@ -67,51 +67,85 @@ const getstarted = () => {
                       htmlFor="name"
                       className="mb-2.5 block font-medium text-white"
                     >
-                      Name
+                      Full Name
                     </label>
                     <input
                       id="name"
                       type="text"
                       name="name"
-                      placeholder="Enter your Name"
+                      placeholder="John Doe"
                       required
                       className="w-full rounded-lg border border-white/[0.12] bg-white/[0.05] px-6 py-3 text-white outline-none focus:border-purple"
                     />
                   </div>
+                  <div className="mb-9.5">
+                    <label
+                      htmlFor="role"
+                      className="mb-2.5 block font-medium text-white"
+                    >
+                      Your Role
+                    </label>
+                    <input
+                      id="role"
+                      type="text"
+                      name="role"
+                      placeholder="President, CEO, VP, etc"
+                      required
+                      className="w-full rounded-lg border border-white/[0.12] bg-white/[0.05] px-6 py-3 text-white outline-none focus:border-purple"
+                    />
+                  </div>
+                  
                 </div>
                 <div className="w-full px-4 md:w-1/2 xl:px-5">
+                  <div className="mb-9.5">
+                    <label
+                      htmlFor="company"
+                      className="mb-2.5 block font-medium text-white"
+                    >
+                      Company Name
+                    </label>
+                    <input
+                      id="company"
+                      type="text"
+                      name="company"
+                      placeholder="XYZ, Inc."
+                      required
+                      className="w-full rounded-lg border border-white/[0.12] bg-white/[0.05] px-6 py-3 text-white outline-none focus:border-purple"
+                    />
+                  </div>
                   <div className="mb-9.5">
                     <label
                       htmlFor="email"
                       className="mb-2.5 block font-medium text-white"
                     >
-                      Email
+                      Work Email
                     </label>
                     <input
                       id="email"
                       type="email"
                       name="email"
-                      placeholder="Enter your Email"
+                      placeholder="john@xyz.com"
                       required
                       className="w-full rounded-lg border border-white/[0.12] bg-white/[0.05] px-6 py-3 text-white outline-none focus:border-purple"
                     />
                   </div>
                 </div>
+                
                 <div className="w-full px-4 xl:px-5">
                   <div className="mb-10">
                     <label
                       htmlFor="message"
                       className="mb-2.5 block font-medium text-white"
                     >
-                      Message
+                      How did you hear about us?
                     </label>
                     <textarea
                       id="message"
                       name="message"
-                      placeholder="Type your message"
+                      placeholder=""
                       rows={6}
                       required
-                      className="w-full rounded-lg border border-white/[0.12] bg-white/[0.05] px-6 py-5 outline-none focus:border-purple"
+                      className="w-full rounded-lg border border-white/[0.12] bg-white/[0.05] px-6 py-1 outline-none focus:border-purple"
                     />
                   </div>
                 </div>
