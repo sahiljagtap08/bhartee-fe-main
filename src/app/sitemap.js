@@ -1,4 +1,4 @@
-const URL = "http://localhost:3000";
+const URL = "http://bhartee.ai";
 
 export default async function sitemap() {
   const routes = ["", "/about", "/pricing", "/blog"].map((route) => ({
