@@ -42,7 +42,7 @@ const Hero = () => {
             <p className="text-green-500">Talent Acquisition.</p>
           </h1>
           <p className="mx-auto mb-9 max-w-[500px] font-medium md:text-lg">
-            Different types of firms use Bhartee's AI Recruiter to efficiently
+            Different types of firms use Bhartee AI to efficiently
             identify and hire the best candidates from their applicant pool,
             significantly reducing the time required to meet their specific
             hiring needs.
