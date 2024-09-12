@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'Careers - Bhartee AI',
-  description: 'Join our team at Bhartee AI and shape the future of AI-powered recruitment solutions',
+  title: 'Terms of Service - Bhartee AI',
+  description: 'Terms of Service for Bhartee AI',
 }
 
 export default function RootLayout({

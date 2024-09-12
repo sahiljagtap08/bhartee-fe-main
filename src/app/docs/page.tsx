@@ -7,7 +7,7 @@ const DocsPage = () => {
     <div className="container py-16">
       <h1 className="text-4xl font-bold mb-8">Bhartee AI Documentation</h1>
       <p className="text-xl mb-8">
-        Welcome to the comprehensive documentation for Bhartee AI's AI-powered recruitment solutions.
+        Welcome to the comprehensive documentation for Bhartee AI&apos;s AI-powered recruitment solutions.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
@@ -17,7 +17,7 @@ const DocsPage = () => {
           </CardHeader>
           <CardContent>
             <p className="mb-4">
-              Bhartee AI offers cutting-edge AI technology to streamline your recruitment process. Here's how to get started:
+              Bhartee AI offers cutting-edge AI technology to streamline your recruitment process. Here&apos;s how to get started:
             </p>
             <ol className="list-decimal list-inside space-y-2">
               <li>Sign up for a Bhartee AI account</li>
@@ -80,7 +80,7 @@ const DocsPage = () => {
         </CardHeader>
         <CardContent>
           <p className="mb-4">
-            If you need assistance or have any questions, please don't hesitate to contact our support team.
+            If you need assistance or have any questions, please don&apos;t hesitate to contact our support team.
           </p>
           <Button variant="link" asChild>
             <a href="mailto:support@bhartee.ai">support@bhartee.ai</a>
