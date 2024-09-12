@@ -1,5 +1,5 @@
 import Image from "next/image";
-import SectionTitle from "../Common/SectionTitle";
+import SectionTitle from "@/components/Common/SectionTitle";
 
 const getstarted = () => {
   return (
