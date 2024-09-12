@@ -1,0 +1,4779 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Title -->
+        <title>404 - Virginia Commonwealth University</title>
+        <!-- Metadata -->
+        <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Favicons -->
+        <link href="/media/compass/images/favicons/favicon.ico" rel="icon" type="image/x-icon"><link href="/media/compass/images/favicons/favicon-16.png" rel="icon" type="image/png" sizes="16x16"><link href="/media/compass/images/favicons/favicon-32.png" rel="icon" type="image/png" sizes="32x32"><link href="/media/compass/images/favicons/touch-icon-57.png" rel="apple-touch-icon-precomposed" sizes="57x57"><link href="/media/compass/images/favicons/touch-icon-72.png" rel="apple-touch-icon-precomposed" sizes="72x72"><link href="/media/compass/images/favicons/touch-icon-76.png" rel="apple-touch-icon-precomposed" sizes="76x76"><link href="/media/compass/images/favicons/touch-icon-114.png" rel="apple-touch-icon-precomposed" sizes="114x114"><link href="/media/compass/images/favicons/touch-icon-120.png" rel="apple-touch-icon-precomposed" sizes="120x120"><link href="/media/compass/images/favicons/touch-icon-144.png" rel="apple-touch-icon-precomposed" sizes="144x144"><link href="/media/compass/images/favicons/touch-icon-152.png" rel="apple-touch-icon-precomposed" sizes="152x152"><link href="/media/compass/images/favicons/touch-icon-180.png" rel="apple-touch-icon-precomposed" sizes="180x180">
+        <!-- Compass - Page Layout CSS -->
+    <link rel="stylesheet" href="/media/compass/page-layout/cwf.page-layout.css" /><!-- Compass - Theme CSS --><link rel="stylesheet" href="/media/compass/theme/cwf.theme.css"><link rel="stylesheet" href="https://use.typekit.net/opu6ano.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /><!-- HP - Footer CSS --><link rel="stylesheet" href="/media/vcu-homepage/assets/styles/hp-footer.css" /><!-- Compass - Nav CSS --><link rel="stylesheet" href="/media/compass/nav/cwf.nav.css" /><link rel="stylesheet" href="/media/university-relations/marcom---carousels/owl.carousel.min.css"><link rel="stylesheet" href="/media/university-relations/marcom---carousels/owl.theme.default.min(1).css"><link rel="stylesheet" href="/media/university-relations/marcom---carousels/marcom-owl-carousel.css">
+        <script type="text/javascript" src="//branding.vcu.edu/bar/academic/latest.js" data-logo-status="hidden" data-width-container="1600"></script>
+<style>
+  #vcu-brandbar--top {
+    display: none;
+  }
+  @media (min-width: 1024px) {
+    #vcu-brandbar--top {
+      display: block;
+    }
+  }
+</style><meta property="og:type" content="website" />
+<meta property="og:image" content="https://vcu.edu/media/vcu-homepage/assets/images/social_og_img_1200x632.jpg"><!-- Google Tag Manager -->
+<!-- End Google Tag Manager --><!-- Google Tag Manager -->
+<!-- End Google Tag Manager --><script>
+if (window.location.hostname === "vcu.edu" || window.location.hostname === "www.vcu.edu") {
+  console.log("Hostname is vcu.edu.");
+  window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3SXQWPSNZ2');
+} else {
+  console.log("Hostname is not vcu.edu.");
+}
+</script>
+<style>
+:root {
+  /* already available through compass */
+  /* --color--gold: #f8b300; */
+}
+/* remove this class from the nav section when you can */
+.color--gold {
+  color: var(--color--gold);
+}
+.font-weight--300 {
+  /* Roboto Light */
+  font-weight: 300;
+}
+.font-weight--400 {
+  /* Roboto Regular */
+  font-weight: 400;
+}
+.font-weight--500 {
+  /* Roboto Medium */
+  font-weight: 500;
+}
+.font-weight--600 {
+  font-weight: 600;
+}
+.font-weight--700 {
+  /* Roboto Bold */
+  font-weight: 700;
+}
+.font-weight--800 {
+  font-weight: 800;
+}
+.font-weight--900 {
+  /* Roboto Black */
+  font-weight: 900;
+}
+/* space t4_button without spacing them by default
+this class is intended on an element that wraps
+a set of .t4_button elements */
+.space__block-buttons--mobile .t4_button {
+  display: block;
+  margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .space__block-buttons--mobile .t4_button {
+    display: inline-block;
+    margin-right: 1rem;;
+  }
+  .space__block-buttons--mobile .t4_button:last-child {
+    margin-right: 0;
+  }
+}
+</style><style>
+/***************************************
+ * 
+ * Development CSS
+ * mhuff
+ *
+ * Table of content:
+ * 
+ * Set root variables
+ * Spacing rules
+ * Global img width
+ * Transitions
+ * Typography & Button styles
+ * Multi-column UL
+ * Full-width option
+ * Embeded video - responsive
+ * Hero - sub page header (Marcom - Hero)
+ * Billboard component (plugin-card)
+ * Image List component (plugin-card)
+ * Callout box (plugin-card)
+ * Stats card (plugin-card)
+ * Stats list (plugin-card)
+ * Hover card (plugin-card)
+ * Card themes - classes for black, gold bg
+ * Image stacked card (plugin-card)
+ * Image/ info card (plugin-card)
+ * Carousel revisions [Marcom - Owl Carousel (Multi)]
+ * Story carousel - Add bg for caption [Marcom - Owl Carousel (Multi)]
+ *
+ ****************************************/
+/* Set variables */
+:root {
+    --hp-color--orange: #b02e01;
+    --hp-color--gold: #ffb300;
+    --hp-color--black: #000000;
+    --hp-color--white: #ffffff;
+    --hp-color--offblack: #121212;
+    --hp-color--offwhite: #f5f5f5;
+    --hp-transition--ease-in-out: .2s ease-in-out;
+    /* here until we refactor -- SG 8/16/24 */
+    --cwf-color--gold: #ffb300;
+    /*--cwf-color--black:#000;
+    --cwf-color--gold:#ffb300;
+    --cwf-color--blue:#006894;
+    --cwf-color--purple:#80225f;
+    --cwf-color--green:#007e00;
+    --cwf-color--orange:#d43900;
+    --cwf-color--red:#b50000;
+    --cwf-accent--background:var(--cwf-color--blue);
+    --cwf-accent--foreground:var(--cwf-color--white);
+    --cwf-font--sans-serif:Roboto,sans-serif;
+    --cwf-font--serif:Merriweather,serif;
+    --cwf-font:var(--cwf-font--sans-serif);
+    --cwf-contain--margin:0 auto;
+    --cwf-contain--width:100%;
+    --cwf-contain--max-width:1400px;
+    font-family:var(--cwf-font,var(--cwf-font--sans-serif,inherit));
+    font-size:1.125em*/;
+}
+.cwf-footer__link--social {
+    /* here until we refactor -- SG 8/16/24 */
+    --cwf-footer__link--social--active--background-color: #ffb300;
+}
+/* Global img width */
+/* Add to base.css -- Needed for FFox */
+img {
+    width: 100%;
+}
+/****************************************/
+/* Spacing */
+/* Bottom of <main> Add padding space */
+main#cwf-content {
+    padding-bottom: 3rem !important;
+}
+/****************************************/
+/* Transitions */
+.hp-transition--ease-in-out {
+    -webkit-transition: var(--hp-transition--ease-in);
+    -moz-transition: var(--hp-transition--ease-in);
+    -o-transition: var(--hp-transition--ease-in);
+    transition: var(--hp-transition--ease-in);
+}
+/****************************************/
+/* Typography styles */
+/* Color - Text headers in #cwf-content */
+#cwf-content :is(h2,h3):not(
+    .hp-billboard :where(h2,h3), 
+    .hp-stats-list :where(h2,h3), 
+    .hp-card-reveal :where(h2,h3), 
+    .hp-sxsvideo :where(h2,h3), 
+    .hp-verticalvideos :where(h2,h3), 
+    .hp-people-profiles-title :where(h2,h3), 
+    .hp-card--img-stacked :where(h2,h3), 
+    .hp-fact :where(h2,h3)) {
+    color: var(--hp-color--orange);
+}
+/* Set paragraph font weight */
+#cwf-content p {
+    font-weight: 300;
+}
+/*********************************************/
+/* Why VCU - text link styles */
+/* Why VCU default - .section */
+:is(.thrive-slide, .financialGuidance) a,
+/* main site default - #cwf-content */
+#cwf-content :is(a,a:active,a:link):not(
+    .hp-billboard :where(a,a:active,a:link), 
+    .hp-stats-list :where(a,a:active,a:link), 
+    .hp-card-reveal :where(a,a:active,a:link), 
+    .hp-cta :where(a,a:active,a:link), 
+    .hp-sxsvideo :where(a,a:active,a:link), 
+    .hp-verticalvideos :where(a,a:active,a:link), 
+    .hp-people-profiles-title :where(a,a:active,a:link), 
+    .hp-fact :where(a,a:active,a:link)) {
+        /*color: var(--hp-color--orange);*/
+        cursor: pointer;
+        text-decoration: none;
+        border-bottom: 1px solid;
+        border-color: var(--hp-color--gold);
+        padding-bottom: 2px;
+        color: var(--hp-color--black);
+        font-weight: 700;
+}
+/* Why VCU default - .section */
+:is(.thrive-slide, .financialGuidance) :is(a:hover,a:focus),
+/* main site default - #cwf-content */
+#cwf-content :is(a:hover,a:focus):not(
+    .hp-billboard :where(a:hover,a:focus), 
+    .hp-stats-list :where(a:hover,a:focus), 
+    .hp-card-reveal :where(a:hover,a:focus), 
+    .hp-cta :where(a:hover,a:focus), 
+    .hp-sxsvideo :where(a:hover,a:focus), 
+    .hp-verticalvideos :where(a:hover,a:focus), 
+    .hp-people-profiles-title :where(a:hover,a:focus), 
+    .hp-fact :where(a:hover,a:focus)) {
+        text-decoration: none;
+        color: var(--hp-color--orange);
+        border-color: transparent;
+}
+/* Why VCU - black bg text links */
+:is(.wgyb, #A-unique-combination, #Set-you-apart) a {
+    border-color: var(--hp-color--gold) !important;
+    color: var(--hp-color--gold) !important;
+}
+:is(.wgyb, #A-unique-combination, #Set-you-apart) a:active,
+:is(.wgyb, #A-unique-combination, #Set-you-apart) a:hover,
+:is(.wgyb, #A-unique-combination, #Set-you-apart) a:focus {
+   color: var(--hp-color--white) !important;
+   border-color: transparent !important;
+}
+@media (min-width: 1024px) {
+    :is(#Test-Market) a {
+    border-color: var(--hp-color--gold) !important;
+    color: var(--hp-color--gold) !important;
+}
+    :is(#Test-Market) a:active,
+    :is(#Test-Market) a:hover,
+    :is(#Test-Market) a:focus {
+       color: var(--hp-color--white) !important;
+       border-color: transparent !important;
+    }
+}
+/* Why VCU - gold bg text links */
+:is(#Champion-of-diversity) a {
+    border-color: var(--hp-color--black) !important;
+    color: var(--hp-color--black) !important;
+}
+:is(#Champion-of-diversity) a:active,
+:is(#Champion-of-diversity) a:hover,
+:is(#Champion-of-diversity) a:focus {
+   color: var(--hp-color--orange) !important;
+   border-color: transparent !important;
+}
+/*********************************************/
+/* Text color classes */
+.hp-text--white {color:var(--hp-color--white) !important;}
+.hp-text--gold {color:var(--hp-color--gold) !important;}
+.hp-text--black {color:var(--hp-color--black) !important;}
+/*********************************************/
+/* Text case */
+.hp-text--uppercase {text-transform: uppercase !important;}
+/*********************************************/
+/* Videos embeded in general content type */
+/* Example is on the Athletics page */
+.video-embed--wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+ /* 16:9 */
+    height: 0;
+}
+.video-embed--wrapper  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/*********************************************/
+/* Button styles */
+.cwf-button,
+.t4_button {
+    --hp-button--background-color: var(--hp-color--gold);
+    --hp-button--border-color: var(--hp-color--gold);
+    --hp-button--color: #121212;
+    --hp-button--active--background-color: var(--hp-color--gold);
+    --hp-button--active--color: #fff;
+    --hp-button--hover-focus--background-color: #212121;
+    --hp-button--hover-focus--color: #fff;
+}
+.cwf-button,
+a.t4_button,
+.t4_button a, 
+.t4_button button,
+.t4_button input[type=button], 
+.t4_button input[type=reset], 
+.t4_button input[type=submit] {
+    border-radius: 1.5rem;
+    display: inline-block;
+    font-family: var(--cwf-font--sans-serif,inherit);
+    font-weight: 700;
+    line-height: 1.5;
+    padding: 0.5rem 1rem !important;
+    text-decoration: none;
+    transition: background-color .1s ease-in-out,color .1s ease-in-out;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+/* Note 8.31.23 - Conflicts with accessibility changes RO */
+#cwf-content :is(a.t4_button,.t4_button a):not(.hp-billboard a.t4_button) {
+    background-color: var(--hp-button--background-color)!important;
+    border: 1px solid var(--hp-button--border-color);
+    color: var(--hp-button--color)!important;
+}
+#cwf-content :is(a.t4_button:hover,a.t4_button:active,a.t4_button:focus):not(.hp-billboard a.t4_button) {
+    background-color: var(--hp-button--hover-focus--background-color)!important;
+    border: 1px solid var(--hp-button--border-color);
+    color: var(--hp-button--hover-focus--color)!important;
+}
+/* Add icon */
+p.t4_button:after,
+a.t4_button:after,
+.t4_button button:after {
+    font-family: FontAwesome;
+    font-weight: 400;
+    line-height: 1;
+    content: "\f105";
+    display: inline-block;
+    margin: -2px 0 0;
+    padding: 0;
+    padding-left: 8px;
+    vertical-align: middle;
+}
+/****************************************/
+/* Multi-column UL */
+/* Create a two column unordered list */
+@media (min-width:800px) {
+    ul.list--2-columns {
+        -webkit-column-count: 2;  /* Chrome/Opera, Safari */
+        -moz-column-count: 2; /* Mozilla Firefox */
+        column-count: 2;
+        /* Properties below are optional: */
+        -webkit-column-gap: 50px; /* Chrome/Opera, Safari */
+        -moz-column-gap: 50px; /* Mozilla Firefox */
+        column-gap: 50px;
+    }
+}
+/****************************************/
+/* Full-width option for content blocks */
+/* Create full-width blocks using the .hp-full-width class */
+.hp-full-width {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    /* add half of main's left pad to the midpoint */
+    margin-left: calc(-50vw - 0.5rem);
+    /* push content back on screen */
+    padding-left: 1rem;
+ }
+/* Full-width blocks -- If there is a sub nav, modify margin */
+@media (min-width:1024px) {
+  :is(.cwf-grid__column--page-layout--subnav+main.cwf-grid__column--page-layout--main .hp-full-width) {
+        /* margin-left: calc(-50vw - 160px - 1rem); */
+        margin-left: calc(-50vw - 151.5px + 1rem);
+   }
+}
+/****************************************/
+/* Hero image header on sub-pages */
+/* Using the Marcom - Multimedia Hero */
+/* Use 'hero-feature-subpage' in T4 name field */
+/* Reset any inherited defaults */
+#hp-feature-subpage .owl-item.active .marcom-hero .content,
+#hero-feature-subpage.marcom-hero,
+#hero-feature-subpage .marcom-hero-overlay,
+#hero-feature-subpage .content .textTitle,
+#hero-feature-subpage .textTitle p,
+#hero-feature-subpage .textTitle h1,
+#hero-feature-subpage .textTitle h2, 
+#hero-feature-subpage .content .inner,
+#hero-feature-subpage.marcom-hero .content {all:unset;all:revert;}
+/* Hero - subpage title + image */
+#hero-feature-subpage.marcom-hero {
+  --hero-feature-subpage--background-color: #fab300;
+  --hero-feature-subpage--foreground-color: #121212;
+}
+#hero-feature-subpage.marcom-hero img {
+  border-bottom: 5px solid var(--hero-feature-subpage--background-color);
+}
+#hero-feature-subpage.marcom-hero .content {
+  background: var(--hero-feature-subpage--background-color);
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+  z-index: 2;
+}
+#hero-feature-subpage.marcom-hero .textTitle h1,
+#hero-feature-subpage.marcom-hero .textTitle h2,
+#hero-feature-subpage.marcom-hero .textTitle p {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+/* Grid - hero-subpage-feature */
+#hero-feature-subpage.marcom-hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+#hero-feature-subpage.marcom-hero .content {
+  grid-column: 1;
+  grid-row: 2;
+  z-index: 2;
+  margin-top: -0.7rem;
+}
+#hero-feature-subpage.marcom-hero picture {
+  grid-column: 1;
+  grid-row: 1;
+  width: 100%;
+  height: auto;
+}
+@media (min-width:800px) {
+    #hero-feature-subpage.marcom-hero {
+      display: grid; 
+      grid-template-columns: 0.1fr auto 1.2fr 0.1fr; 
+      grid-template-rows: 1fr 1.6fr 0.4fr; 
+      gap: 0px 0px; 
+    }
+    #hero-feature-subpage.marcom-hero picture { 
+        grid-area: 1 / 1 / 4 / 5; 
+    }
+    #hero-feature-subpage.marcom-hero .content {
+        grid-area: 3 / 2 / 4 / 3;
+        margin: 0;
+        margin-block-end: 0.6rem;
+    }
+}
+/****************************************/
+/* Testimonial v01 */
+/* Using the Plugin-Card */
+/* Use .hp-billboard to style a full-width testimonial (incl blockquote) */
+.plugin-card.hp-billboard {
+    --cwf-card--background-color: #121212;
+    --cwf-card--foreground-color: #f5f5f5;
+    background-color: var(--cwf-card--background-color);
+    border: 0;
+    margin-bottom: 1rem;
+    z-index: 0;
+}
+.hp-billboard .plugin-card__container {
+    max-width: 100%;
+}
+.hp-billboard .plugin-card__image {
+    object-fit:cover; 
+    width:100%;
+    height:100% !important;
+}
+.hp-billboard .plugin-card__body {
+    padding: 5rem 3rem 3rem;
+}
+@media (min-width:1024px) {
+    .hp-billboard .plugin-card__media {
+        width:50%;
+     }
+     .hp-billboard .plugin-card__body {
+        padding: 4rem;
+        margin-left: 2rem;
+    }
+}
+.hp-billboard blockquote {
+    position:relative;
+}
+.hp-billboard blockquote p:first-child {
+    border-bottom: 0;
+    border-top: 0;
+    font-size: 1.5rem;
+    font-style: normal;
+    line-height:1.3;
+    margin: 0 0 1rem;
+}
+.hp-billboard blockquote + p {
+    font-size: 1rem;
+    font-style: italic;
+    padding-top: 2rem;
+}
+.hp-billboard strong {
+    color: var(--hp-color--gold);
+    font-style: normal;
+}
+/* Add fancy svg quotes */
+.plugin-card.hp-billboard p:only-child:after,
+.plugin-card.hp-billboard p:only-child:before {
+    content: "";
+    font-size: 4em;
+    line-height: .3em;
+    opacity: .5;
+    width: 40px;
+    height: 40px !important;
+    vertical-align: -.2em;
+    padding: 0 0 0 .4em;
+}
+.plugin-card.hp-billboard p:only-child:before {
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    top: -2rem;
+    background-position: 0 0 !important;
+}
+@media (min-width:1024px) {
+    .plugin-card.hp-billboard p:only-child:before {
+        left: -2.8rem;
+        top: -0.2rem;
+    }
+}
+.plugin-card.hp-billboard p:only-child:after {
+    background-position: 0 70px !important;
+    margin-left: 0.35rem;
+    line-height: 0;
+}
+/* Open quote T4 #621725 */
+.plugin-card.hp-billboard p:only-child:before {
+    /*background: transparent url('https://www.vcu.edu/media/vcu/assets/images/smart-quotes/smart-quotes-white-open.svg') no-repeat;
+    background: transparent url("") no-repeat;*/
+    background: url('/media/vcu-homepage/assets/images/smart-quotes-white-open.svg') transparent no-repeat;
+}
+/* Close quote T4 #621726 */
+.plugin-card.hp-billboard p:only-child:after {
+    /*background: transparent url('https://www.vcu.edu/media/vcu/assets/images/smart-quotes/smart-quotes-white-close.svg') no-repeat;
+    background: transparent url("") no-repeat;*/
+    background: url('/media/vcu-homepage/assets/images/smart-quotes-white-close.svg') transparent no-repeat;
+}
+/* Hide blurred background image */
+.plugin-card.hp-billboard .plugin-card__background {
+    opacity:0 !important;
+    display:none !important;
+}
+/****************************************/
+/* Image List component */
+/* Using the Plugin-Card */
+/* Adjust default CSS for image list cards */
+.plugin-card.hp-image-list {
+    border: none; /* remove */
+}
+.hp-image-list .plugin-card__media {
+    border: 5px solid var(--hp-color--gold);
+}
+.plugin-card.hp-image-list .plugin-card__background {
+    webkit-backface-visibility: hidden;
+   backface-visibility: hidden;
+   display: none !important; /* hide bg image */
+}
+@media (min-width:1024px) {
+    /* Modify image placement and backgrounds */
+    .hp-image-list .plugin-card__media {
+        align-items: flex-start; /* top aligned */
+        background-color: transparent; /* hide black bg */
+        width: 35%; /* adjust; override the default 25% width */
+    }
+    .hp-image-list .plugin-card__image {
+        position: relative;
+        object-fit: cover; /* Fill the space */
+        width: 100%;
+        height: 100% !important; /* override style */
+    }
+}
+/****************************************/
+/* Callout box v01 */
+/* Using the Plugin-Card */
+/* Using class .hp-callout */
+.hp-callout {
+    padding: 0;
+    border: none;
+}
+.hp-callout--basic {
+    background: var(--hp-color--offwhite);
+    border: 4px solid var(--hp-color--gold);
+    padding: 0.5em 2em;
+}
+@media (min-width: 450px) {
+   .hp-callout--basic {
+        padding: 0;
+    } 
+}
+@media (min-width:320px) {
+   .hp-callout--basic {
+        padding: 0;
+    } 
+}
+/****************************************/
+/* Stats card v01 */
+/* Using the Plugin-Card */
+/* With before:{<div class="cwf-grid cwf-grid--[n]-columns hp-stats">} */
+.hp-stats {
+    justify-items:center;
+    padding:1rem;
+}
+/* STATS bars */
+.hp-stats .plugin-card {
+  background: transparent;
+  border:none;
+  width: 100%;
+}
+@media (min-width:1020px) {
+  .hp-stats .plugin-card {
+    max-width: 350px;
+    text-align: center;
+  }
+}
+.hp-stats p,
+.hp-stats a {
+    font-size: 1rem;
+    font-weight:normal;
+}
+.hp-stats a:focus,
+.hp-stats a:hover {
+    text-decoration:none;
+}
+.hp-stats strong {
+    display: block;
+    font-family: 'thunderhouse-pro';
+    font-weight: 400 !important;
+    font-size: 9rem !important;
+    padding: 0 0 1rem;;
+    margin: 0;
+    line-height: 0.8 !important;
+}
+.hp-stats span {
+    font-size: normal;
+    vertical-align: middle !important;
+}
+/****************************************/
+/*** Stats List v01 ***/
+/* Example on 'Get Involved' page */
+/* Stats in a flexbox grid : using list items in a UL */
+/* Apply css:{.hp-stats-list} to the T4 content name */
+/* Big number gets <strong> */
+.hp-stats-list .plugin-card__container {
+    padding: 1.5rem;
+}
+.hp-stats-list h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 2rem;
+    color: var(--hp-color--offblack)
+}
+.hp-stats-list ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    gap: 6rem;
+    justify-content: center;
+    -webkit-align-items: center;
+}
+.hp-stats-list > * {
+    flex: 1 1 0;
+}
+.hp-stats-list li {
+    text-align: center;
+}
+.hp-stats-list li strong {
+    font-family: Roboto,sans-serif;
+    font-size: 4rem !important;
+    margin: 0;
+    line-height: 0.8 !important;
+    display: block;
+}
+.hp-stats-list li span {
+    font-size: 1rem;
+    vertical-align: middle !important;
+}
+.hp-stats-list--gold {
+    background: var(--hp-color--gold);
+}
+/****************************************/
+/* Hover Card style v01 */
+/* Title and photo visible */
+/* On hover:  Blurb and title animate in view */
+/* Add .cwf-grid.hp-card-reveal to parent div */ 
+/* plugin- cards are child elements */
+.cwf-grid.hp-card-reveal {
+  grid-gap:.5rem;
+  padding-bottom: 1.5rem;
+}
+.hp-card-reveal .plugin-card__container {
+    position:relative;
+    overflow:hidden;
+}
+.hp-card-reveal .plugin-card__body {
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+.hp-card-reveal .plugin-card__body > h2,
+.hp-card-reveal .plugin-card__body > h3,
+.hp-card-reveal .plugin-card__body p {
+    -webkit-transition: opacity .35s, -webkit-transform .35s;
+    transition: opacity .35s, -webkit-transform .35s;
+    -o-transition: opacity .35s, transform .35s;
+    transition: opacity .35s, transform .35s;
+    transition: opacity .35s, transform .35s, -webkit-transform .35s;
+}
+.hp-card-reveal .plugin-card__body > h2,
+.hp-card-reveal .plugin-card__body > h3 {
+    position: absolute;
+    vertical-align: baseline;
+    bottom: 0;
+    color: #fff;
+    font-size: 1rem;
+    padding: 1.5rem !important;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    text-transform: uppercase;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(0,0,0,.8) 0%, rgba(20,20,20,.75) 35%, rgba(34,34,34,.75) 100%);
+}
+.hp-card-reveal .plugin-card__body a {
+    text-decoration: none;
+}
+.hp-card-reveal .plugin-card__body p {
+    background: #000;
+    width: 100%;
+    color: #fff;
+    text-transform: none;
+    opacity: 0;
+    -webkit-transform: translate3d(0, 50px, 0);
+    transform: translate3d(0, 50px, 0);
+    font-size: 1rem;
+    padding: 1.5rem !important;
+    line-height: 1.5;
+}
+.hp-card-reveal .plugin-card__background {
+    display:none;
+}
+.hp-card-reveal .plugin-card__container:hover img,
+.hp-card-reveal .plugin-card:focus img {
+    opacity: .3;
+}
+/* Transform on hover & focus */
+.hp-card-reveal .plugin-card:focus h2, 
+.hp-card-reveal .plugin-card__container:hover h2,
+.hp-card-reveal .plugin-card:focus h3, 
+.hp-card-reveal .plugin-card__container:hover h3 {
+    background: 0 0;
+    -webkit-transform: translate3d(0, -200px, 0);
+    transform: translate3d(0, -200px, 0);
+}
+.hp-card-reveal .plugin-card__container:hover p,
+.hp-card-reveal .plugin-card__container:focus p,
+.hp-card-reveal .plugin-card:focus p {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+/* Card link */
+.hp-card-reveal a,
+.hp-card-reveal a:link {
+color: #ffb300 !important;
+font-weight: 700 !important;
+line-height: 1 !important;
+text-transform: uppercase !important;
+border: 0 !important;
+padding: 0 !important;
+margin: 10px 0 0 !important;
+}
+.hp-card-reveal a:hover,
+.hp-card-reveal a:focus {
+color: #e57200;
+}
+.hp-card-reveal a:after {
+position: relative;
+font-family: FontAwesome;
+font-weight: 400;
+font-size: 16px;
+color: #e57200;
+content: "\f105";
+display: inline-block;
+margin: 0;
+padding: 0;
+  padding-left: 0px;
+line-height: 1;
+padding-left: 8px;
+top: -1px;
+vertical-align: middle;
+}
+.hp-card-reveal a::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: ' ';
+}
+/****************************************/
+/*! Card styles VCU Homepage 
+ * Overrides and additions to Plugin - Card v2.4.0 | Compass v1.4.0 
+ * */
+/* Plugin card themes */
+#cwf-content .plugin-card--black .plugin-card__body a:active,
+#cwf-content .plugin-card--black .plugin-card__body a:hover,
+#cwf-content .plugin-card--black .plugin-card__body a:focus {
+   color: var(--hp-color--black);
+}
+.plugin-card--gray {
+    --cwf-card--background-color: #ebebeb;
+    --cwf-card--foreground-color: #333;
+    --cwf-card--marker-color: #ffb300;
+    --cwf-card--link-color: #006894
+}
+.plugin-card--gray .plugin-card__body .cwf-button,.plugin-card--gray .plugin-card__body .t4_button {
+    --cwf-button--background-color: #fff;
+    --cwf-button--border-color: #757575;
+    --cwf-button--color: #006894;
+    --cwf-button--active--background-color: #0093d2;
+    --cwf-button--active--color: #333;
+    --cwf-button--hover-focus--background-color: #ffb300;
+    --cwf-button--hover-focus--color: #333
+}
+/* Black theme */
+.plugin-card--black {
+    --cwf-card--background-color: #121212;
+    --cwf-card--foreground-color: #f5f5f5;
+    --cwf-link--color: #ffb300;
+    --cwf-link--active--color: #fff;
+}
+.plugin-card--black .plugin-card__body .cwf-button,
+.plugin-card--black .plugin-card__body .t4_button {
+    --cwf-button--background-color: #121212;
+    --cwf-button--border-color: ##ffb300;
+    --cwf-button--color: #fff;
+    --cwf-button--active--background-color: #fff;
+    --cwf-button--active--color: #333;
+    --cwf-button--hover-focus--background-color: #fff;
+    --cwf-button--hover-focus--color: #fff
+}
+/* Gold theme */
+.plugin-card--gold {
+    --cwf-card--background-color: #ffb300;
+    --cwf-card--foreground-color: #121212;
+    --cwf-link--color: #121212;
+}
+.plugin-card--gold .plugin-card__body .cwf-button,
+.plugin-card--gold .plugin-card__body .t4_button {
+    --cwf-button--background-color: #121212;
+    --cwf-button--border-color: ##ffb300;
+    --cwf-button--color: #fff;
+    --cwf-button--active--background-color: #fff;
+    --cwf-button--active--color: #333;
+    --cwf-button--hover-focus--background-color: #fff;
+    --cwf-button--hover-focus--color: #fff
+}
+/* Theme (Black) - Dark background for card text area */
+.plugin-card--black .plugin-card__body :where(h2,h3,h4) {
+    color: var(--hp-color--gold);
+}
+#cwf-content .plugin-card--black .plugin-card__body a {
+    border-color: var(--hp-color--gold);
+    color: var(--hp-color--gold);
+}
+#cwf-content .plugin-card--black .plugin-card__body a:active,
+#cwf-content .plugin-card--black .plugin-card__body a:hover,
+#cwf-content .plugin-card--black .plugin-card__body a:focus {
+   color: var(--hp-color--white);
+   border-color: transparent;
+}
+/* Theme (Gold) - Dark background for card text area */
+.plugin-card--gold .plugin-card__body :where(h2,h3,h4) {
+    color: var(--hp-color--black);
+}
+#cwf-content .plugin-card--gold .plugin-card__body a {
+    border-color: var(--hp-color--black);
+    color: var(--hp-color--black);
+}
+#cwf-content .plugin-card--gold .plugin-card__body a:active,
+#cwf-content .plugin-card--gold .plugin-card__body a:hover,
+#cwf-content .plugin-card--gold .plugin-card__body a:focus {
+   color: var(--hp-color--orange);
+   border-color: transparent;
+}
+/****************************************/
+/* HP Card - Image stacked above text area */
+/* Apply class .hp-card--img-stacked to Plugin-Card */
+.hp-card--img-stacked .plugin-card__media {
+    /* Remove bg color */
+    background-color: transparent;
+}
+.hp-card--img-stacked .plugin-card__background {
+    all: unset;
+    display: none;
+    opacity: 0;
+}
+/* For Big photo stacked above a text message area */
+/* Extra padding on text area */
+/* Use Plugin-Card with .hp-card--img-stacked class */
+.hp-card--img-stacked .plugin-card__container {
+    flex-direction: column-reverse; /* img stacked on top */
+}
+.hp-card--img-stacked.hp-card--img-stacked--text .plugin-card__container {
+    flex-direction: column; /* text stacked on top */
+}
+.hp-card--img-stacked .plugin-card__body {
+    padding: 1.5rem 1.5rem 2rem;
+}
+@media (min-width: 450px) {
+    .hp-card--img-stacked .plugin-card__body {
+        padding: 2.5rem 3rem 3rem;
+    }
+}
+.hp-card--img-stacked .plugin-card__media {
+    width: 100%;
+}
+/*****************************************************/
+/* Colleges and Schools */
+/* Plugin-Card with class .hp-card--img-info */
+/* For Colleges and Schools cards */
+.hp-card--img-info.plugin-card--black .plugin-card {
+    background: #121212 !important;
+}
+.hp-card--img-info :is(.plugin-card__body .h3, .plugin-card__body h3) {
+    font-size: 1.277778rem;
+    text-transform: unset !important;
+    font-size: 1.2rem !important;
+    line-height: 1.4 !important;
+}
+.hp-card--img-info :is(a.t4_button,.t4_button a) {
+    padding: 0.25rem 0.65rem 0.25rem !important;
+    /*font-size: 0.9rem !important;*/
+    font-size: 0.75rem !important;
+}
+.hp-card--img-info :is(.plugin-card__body) {
+    padding: 0.5rem 1rem 0.75rem;
+}
+</style><style>
+/* Global Compass overrides for vcu.edu */
+main#cwf-content {
+  padding-bottom: 0;
+}
+.cwf-grid.cwf-grid--page-layout {
+  padding-bottom: 0;
+}
+.cwf-nav--light{
+  --cwf-nav--accent-color: transparent;
+  --cwf-nav--background-color--level-2: #FFF;
+  --cwf-nav--foreground-color: #434343;
+  --cwf-nav__container--background-color: #FFF;
+  --cwf-nav--active--foreground-color: #434343;
+  --cwf-accent--foreground:#434343;
+  --cwf-nav--border-color: transparent;
+}
+.cwf-grid__column--page-layout--subnav {
+  padding: .5rem 0;
+}
+.cwf-nav__item, .cwf-nav__link {
+  justify-content: flex-end;
+}
+.cwf-nav__item--is-current .cwf-nav__link {
+  background-color: #212121;
+  color: #f8b300;
+}
+.cwf-nav--sub .cwf-nav__item--is-current .cwf-nav__link:after {
+  color: #fff !important;
+}
+.cwf-nav--sub .cwf-nav__link:active,
+.cwf-nav--sub .cwf-nav__link:focus,
+.cwf-nav--sub .cwf-nav__link:hover {
+  background-color: #e6e6e6;
+}
+.cwf-nav--sub .cwf-nav__item--is-current .cwf-nav__link:active,
+.cwf-nav--sub .cwf-nav__item--is-current .cwf-nav__link:focus,
+.cwf-nav--sub .cwf-nav__item--is-current .cwf-nav__link:hover {
+  background-color: #3c3c3c;
+}
+.cwf-nav--sub .cwf-nav__link::after {
+    content: "\f105";
+    font-family: "FontAwesome";
+    position: absolute;
+    right: .75rem;
+    color:#888;
+}
+/* this is here temporarily */
+.hp-nav__link--outbound:after {
+  content: "\f08e" !important;
+  font-size: 0.75rem;
+  right: 0.6rem !important;
+  top: 1rem;
+}
+.cwf-nav--sub .cwf-nav__item:first-of-type .cwf-nav__link {
+  font-size: 1.333333rem;
+  text-transform: uppercase;
+}
+.cwf-grid--page-layout {
+  padding: 0;
+}
+.cwf-grid__column--page-layout {
+    --cwf-grid__column--padding: 1rem;
+}
+@media (min-width: 768px) {
+  .cwf-grid__column--page-layout {
+    --cwf-grid__column--padding: 0.5rem;
+  }
+}
+/* End Global Compass overrides for vcu.edu */
+</style>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,900;1,300;1,900&display=swap');
+#d\.en\.600510.plugin-card.hp-rule--gold.hp-values .plugin-card__body h3 {
+    font-style: italic;
+    font-weight: 900;
+    text-transform: uppercase;
+    /* color: #333; */
+    color: var(--hp-color--black);
+}
+/* 
+600739-factsfull-ul 
+600753-facts2 
+600737-facts1 
+612236-research1 
+600765-research2 
+600771-reserach3 
+604889-grad 
+605409-ugrad 
+601051-campuslife 
+608893-getinvolved 
+604751-safety 
+601939-housing 
+604824-athl-gold 
+604846-athletics
+604873-arts
+*/
+.hp-cta--stat ul {
+    flex-direction:column;
+    text-align:center;
+    background-color:#f8f8f8;
+}
+.hp-cta--stat {
+    text-align: center;
+    background-color: #f8f8f8;
+}
+@media screen and (min-width: 320px) {
+/* Spacing below Quick Facts*/
+.plugin-card.hp-stats-list {
+    border: none;
+}
+.hp-stats-list .plugin-card__body {
+    padding-bottom:0;
+}
+.hp-stats-list .plugin-card__container {
+    padding-bottom:0;
+}
+.hp-stats-list--gold .plugin-card__body {
+    padding-bottom:0;
+}
+.hp-stats-list--gold .plugin-card__container {
+    padding-bottom:0;
+}
+#d\.en\.604889.hp-stats-list.hp-stats .plugin-card__body {
+    padding-bottom:0;
+}
+#cwf-content .hp-cta--ram p {
+    font-size: 2rem;
+    line-height: 3.2rem;
+    font-weight:400;
+}
+/* Spacing between facts*/
+#d\.en\.604751.plugin-card.hp-stats-list .plugin-card__body ul li {
+    max-width:100%;
+}
+#d\.en\.608893.plugin-card.hp-stats-list .plugin-card__body ul li {
+    max-width:100%;
+}
+#d\.en\.601051.plugin-card.hp-stats-list ul{
+    gap: 1rem;
+}
+#d\.en\.608893.plugin-card.hp-stats-list ul{
+    gap: 3rem;
+}
+#d\.en\.604751.plugin-card.hp-stats-list ul{
+    gap: 3rem;
+}
+#d\.en\.601939.plugin-card.hp-stats-list ul{
+    gap: 3rem;
+}
+#d\.en\.604824.plugin-card.hp-stats-list ul{
+    gap: 1rem;
+}
+#d\.en\.604846.plugin-card.hp-stats-list ul{
+    gap: 1rem;
+}
+#d\.en\.604873.plugin-card.hp-stats-list ul{
+    gap: 1rem;
+}
+#d\.en\.605409.plugin-card.hp-stats-list ul{
+    gap: 1rem;
+}
+#d\.en\.604889.plugin-card.hp-stats-list ul{
+    gap: 1rem;
+}
+#d\.en\.612236.plugin-card.hp-stats-list ul{
+    gap:1rem;
+}
+#d\.en\.600737.plugin-card.hp-stats-list ul{
+    gap:2.2em;
+}
+#d\.en\.600771.plugin-card.hp-stats-list ul{
+    gap:1rem;
+}
+#d\.en\.600753.plugin-card.hp-stats-list ul{
+    gap:1em;
+}
+/* HP-billboard tweaks for "A university for Richmond" on Facts/Rankings page*/
+#d\.en\.600739.plugin-card.hp-billboard .plugin-card__body ul li strong{
+    font-weight:700;
+}
+#d\.en\.600739.plugin-card.hp-billboard .plugin-card__body ul li{
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    padding-bottom: 0.7rem;
+}
+#d\.en\.600739.plugin-card.hp-billboard .plugin-card__body ul li strong{
+    font-weight:700;
+}
+#d\.en\.600739.plugin-card.hp-billboard .plugin-card__body ul li{
+    font-weight: 300;
+    font-size: 1.1rem;
+    line-height: 1.2;
+    padding-bottom: 1rem;
+}
+#d\.en\.600739.plugin-card.hp-billboard .plugin-card__body ul{
+    list-style-type: none;
+    margin: 1rem 0 0 0;
+    padding: 0;
+}
+.hp-stats-list li {
+    position: relative;
+    background: url('/media/vcu-homepage/assets/images/stat-bkg--gold.svg'); 
+    line-height: 1.25;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 5.5em;
+    padding-top: 3rem;
+    top: -3rem;
+}
+.hp-stats-list.hp-stats-list--gold li {
+    position: relative;
+    background: url('/media/vcu-homepage/assets/images/stat-bkg--black.svg');
+    line-height: 1.25;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 5.5em;
+    padding-top: 3rem;
+    top: -3rem;
+}
+#d\.en\.604846.hp-stats-list.hp-stats-list li {
+    background-size: 5.5em;
+}
+.hp-billboard .plugin-card__body {
+    padding: 3rem 2rem 3rem;
+}
+/* About page 8 things numbers */
+#cwf-content .plugin-card.hp-about.hp-image-list p:before{
+vertical-align: bottom;
+    overflow: hidden;
+    position: absolute;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    color: #000;
+    font-size: 3em;
+    line-height: 1;
+    margin: 0;
+    z-index: 0;
+    margin-top: -4rem;
+    margin-left: -30px;
+    opacity: .1;
+}
+#cwf-content #d\.en\.613274.plugin-card.hp-about.hp-image-list p:before{
+    content: "1";
+}
+#cwf-content #d\.en\.613278.plugin-card.hp-about.hp-image-list p:before{
+    content: "2";
+}
+#cwf-content #d\.en\.613290.plugin-card.hp-about.hp-image-list p:before{
+    content: "3";
+}
+#cwf-content #d\.en\.613291.plugin-card.hp-about.hp-image-list p:before{
+    content: "4";
+}
+#cwf-content #d\.en\.613293.plugin-card.hp-about.hp-image-list p:before{
+    content: "5";
+}
+#cwf-content #d\.en\.613300.plugin-card.hp-about.hp-image-list p:before{
+    content: "6";
+}
+#cwf-content #d\.en\.613303.plugin-card.hp-about.hp-image-list p:before{
+    content: "7";
+}
+#cwf-content #d\.en\.613305.plugin-card.hp-about.hp-image-list p:before{
+    content: "8";
+}
+}
+@media screen and (min-width: 768px) {
+/* About page 8 things numbers */
+#cwf-content .plugin-card.hp-about.hp-image-list p:before{
+    vertical-align: bottom;
+    overflow: hidden;
+    position: absolute;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    color: #000;
+    left: 484px;
+    /* top: auto; */
+    font-size: 10em;
+    line-height: 1;
+    opacity: .1;
+    margin: 0;
+    z-index: 0;
+    margin-top: 0.125em;
+}
+#cwf-content #d\.en\.613274.plugin-card.hp-about.hp-image-list p:before{
+    content: "1";
+}
+#cwf-content #d\.en\.613278.plugin-card.hp-about.hp-image-list p:before{
+    content: "2";
+}
+#cwf-content #d\.en\.613290.plugin-card.hp-about.hp-image-list p:before{
+    content: "3";
+}
+#cwf-content #d\.en\.613291.plugin-card.hp-about.hp-image-list p:before{
+    content: "4";
+}
+#cwf-content #d\.en\.613293.plugin-card.hp-about.hp-image-list p:before{
+    content: "5";
+}
+#cwf-content #d\.en\.613300.plugin-card.hp-about.hp-image-list p:before{
+    content: "6";
+}
+#cwf-content #d\.en\.613303.plugin-card.hp-about.hp-image-list p:before{
+    content: "7";
+}
+#cwf-content #d\.en\.613305.plugin-card.hp-about.hp-image-list p:before{
+    content: "8";
+}
+#cwf-content .hp-cta--ram p {
+    font-size: 2rem;
+    line-height: 4rem;
+    font-weight:400;
+}
+/* Background image size tweaks for Stats*/
+#d\.en\.604889.hp-stats-list.hp-stats-list li {
+    background-size: 6.4em;
+}
+#d\.en\.604751.plugin-card.hp-stats-list .plugin-card__body {
+    padding-bottom:0;
+}
+#d\.en\.604873.hp-stats-list.hp-stats-list li {
+    background-size: 5.5em;
+}
+#d\.en\.604846.hp-stats-list.hp-stats-list li {
+    background-size: 5.5em;
+}
+.hp-stats-list.hp-stats-list--gold li {
+    background-size: 7em;
+}
+.hp-stats-list li {
+    background-size: 7em;
+}
+#d\.en\.605409.hp-stats-list.hp-stats-list--gold li {
+    background-size: 5.5em;
+}
+#d\.en\.604824.hp-stats-list.hp-stats-list--gold li {
+    background-size: 5.5em;
+}
+/* Facts and rankings hp billboard list styles*/
+#d\.en\.600739.plugin-card.hp-billboard .plugin-card__body ul li strong{
+    font-weight:700;
+}
+#d\.en\.600739.plugin-card.hp-billboard .plugin-card__body ul li{
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    padding-bottom: 0.7rem;
+}
+#d\.en\.600739.plugin-card.hp-billboard .plugin-card__body ul{
+    list-style-type: none;
+    margin: 1rem 0 0 0;
+    padding: 0;
+}
+#d\.en\.604873.plugin-card.hp-stats-list .plugin-card__body ul li {
+    max-width:40%;
+}
+#d\.en\.604751.plugin-card.hp-stats-list .plugin-card__body ul li {
+    max-width:44%;
+    background-size:5em;
+}
+#d\.en\.608893.plugin-card.hp-stats-list .plugin-card__body ul li {
+    max-width:44%;
+}
+/* Spacing between facts*/
+#d\.en\.601051.plugin-card.hp-stats-list ul{
+    gap: 3rem;
+}
+#d\.en\.604751.plugin-card.hp-stats-list ul{
+    gap: 3rem;
+}
+#d\.en\.608893.plugin-card.hp-stats-list ul{
+    gap: 6rem;
+}
+#d\.en\.601939.plugin-card.hp-stats-list ul{
+    gap: 2.7rem;
+}
+#d\.en\.604824.plugin-card.hp-stats-list ul{
+    gap: 3rem;
+}
+#d\.en\.604846.plugin-card.hp-stats-list ul{
+    gap: 3rem;
+}
+#d\.en\.604873.plugin-card.hp-stats-list ul{
+    gap: 3rem;
+}
+#d\.en\.605409.plugin-card.hp-stats-list ul{
+    gap:6rem;
+}
+#d\.en\.604889.plugin-card.hp-stats-list ul{
+    gap:6rem;
+}
+#d\.en\.612236.plugin-card.hp-stats-list ul{
+    gap:1rem;
+}
+#d\.en\.600771.plugin-card.hp-stats-list ul{
+    gap:1rem;
+}
+#d\.en\.600737.plugin-card.hp-stats-list ul{
+    gap:3em;
+}
+#d\.en\.600753.plugin-card.hp-stats-list ul{
+    gap:1em;
+}
+/* Spacing below Quick Facts*/
+.plugin-card.hp-stats-list {
+    border: none;
+}
+.hp-stats-list .plugin-card__body {
+    padding-bottom:0;
+}
+.hp-stats-list .plugin-card__container {
+    padding-bottom:0;
+}
+.hp-stats-list--gold .plugin-card__body {
+    padding-bottom:0;
+}
+.hp-stats-list--gold .plugin-card__container {
+    padding-bottom:0;
+}
+.hp-cta--stat ul {
+    flex-direction: row;
+    padding-top:0;
+}
+#d\.en\.604873.plugin-card.hp-stats-list{
+    margin-bottom:0;
+}
+}
+#cwf-content .hp-intro p:first-of-type {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 1.4;
+    padding: 0 0 .75em 0;
+    margin: 0;
+    color: #222;
+}
+#cwf-content .hp-intro h2 {
+    font-weight: 500;
+    font-size: 2.35rem;
+}
+#cwf-content .plugin-card.hp-image-list p {
+    font-weight: 400;
+    font-size: 1rem;
+}
+#cwf-content .plugin-card.hp-image-list h3 {
+    color:#222;
+}
+.plugin-card .hp-callout--small{
+    border: 0;
+}
+#cwf-content .plugin-general-content ul li {
+    font-weight: 300;
+    padding-bottom: 0.8rem;
+    line-height: 1.3;
+    font-size: 1.11112rem;
+}
+.plugin-card.hp-rule--gold.hp-values {
+    border: none;
+    margin-top: 2rem;
+}
+.hp-rule--gold hr{
+    border-top: 1px dashed #f8b300;
+}
+.circle-img img {
+    border: 3px solid #F8b300;
+    border-radius: 300px 300px 300px 300px;
+    -webkit-border-radius: 300px 300px 300px 300px;
+    -moz-border-radius: 300px 300px 300px 300px;
+}
+.circle-img p {
+    font-size: 20px !important;
+    line-height: 1.3 !important;
+}
+.hp-cta--stat{
+    text-align:center;
+    background-color:#f8f8f8;
+}
+.hp-cta--stat .plugin-card__body{
+    max-width:1080px;
+    margin: 0 auto;
+}
+.hp-cta--stat.hp-stats-list li{
+    background:none;
+}
+.hp-cta--stat ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+.hp-cta--stat ul {
+    gap: 2rem;
+    text-align: unset;
+    padding-top: 1em;
+    padding-bottom: 0.8em;
+}
+.hp-cta--stat h2{
+    text-align: center;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-style: oblique;
+    font-size:2.3rem;
+}
+#cwf-content p.hp-verticalvideos__support{font-weight:400;}
+.hp-callout--small{background-color:#f5f5f5;border:0;}
+#cwf-content .hp-callout--small p {
+    font-size: .78rem;
+    font-weight: 400;
+}
+#cwf-content .hp-callout--small h3 {
+    font-size: .9rem;
+    color:#222;
+}
+#cwf-content .hp-callout--small h2{
+    font-size:1.1rem;
+}
+#cwf-content .hp-news__item-date{font-size: 0.778rem;}
+#cwf-content .hp-news__item-link{font-size: 0.9rem;}
+#cwf-content :is(a.t4_button,.t4_button a):not(.hp-billboard a.t4_button){font-size:1rem;}
+#cwf-content .progExp__container p {
+    font-size: 1.8rem;
+    margin: 0;
+}
+#cwf-content #basic-carousel-2 .content .inner p{font-weight: 400;font-size:.9rem;line-height:1.3;}
+#cwf-content #basic-carousel .content .inner p{font-weight: 400;font-size:.9rem;line-height:1.3;}
+#cwf-content #basic-carousel .content .inner p strong{font-weight: 600;font-size:.9rem;line-height:1.3;}
+#cwf-content #basic-carousel .content .inner p span{font-weight: 400;}
+#cwf-content #basic-carousel .content .textTitle span p {
+    font-weight: 400;
+    font-size: .9rem;
+    line-height: 1.3;
+}
+/* Carousel adjustments*/
+#basic-carousel .content p:not(.t4_button) span{
+    text-shadow: 1px 2px 2px rgba(0,0,0,.673);
+    font-weight: 400;
+}
+/* Global adjustments*/
+body{
+    background: url('/media/vcu-homepage/assets/images/bkg-repeat.png');
+    background-repeat: repeat;
+    background-color: #222;
+}
+/*
+.hp-full-width {
+    padding-left:0;
+}*/
+.cwf-grid.cwf-grid--page-layout {
+    background: #fff;
+}
+@media only screen and (min-width: 768px) {
+main#cwf-content {
+    padding-bottom: 0;
+    padding-left: 5rem;
+    padding-right: 8rem;
+}
+.plugin-card.hp-values .plugin-card__body{
+    padding:0;
+}
+}
+:where(#cwf-content p) {
+    font-size: 1.11112rem;
+    line-height:  1.5;
+}
+.cwf-grid__column--page-layout--subnav{
+    border-right:1px solid #ccc;
+}
+.progExp__container .text-gold{
+    font-weight:600;
+}
+.intro p:first-of-type {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 31px;
+    padding: 0 0 1em 0;
+    margin: 0;
+    color: #111;
+}
+.hp-card-reveal h2{
+    font-size: 1.277778rem;
+}
+.hp-card-reveal .plugin-card__body > h2{
+    font-size: 1.277778rem;
+}
+.hp-card-reveal .plugin-card__body p.t4_button a, .hp-card-reveal .plugin-card__body p.t4_button a:link{
+    color: #F8B300 !important;
+    font-weight: 700 !important;
+    line-height: 1 !important;
+    text-transform: uppercase !important;
+    border: 0 !important;
+    padding: .5rem 1rem !important;
+    margin: 10px 0 0 !important;
+}
+.hp-card-reveal .plugin-card__body h2 a, .hp-card-reveal .plugin-card__body h2 a:link{
+    font-size: 1.277778rem;
+}
+#cwf-content .hp-stats-list h3{
+    text-align: center;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-style: oblique;
+    font-size:2.3rem;
+    margin-bottom:1rem;
+}
+.hp-stats-list li strong{
+    font-size:.9rem;
+    font-weight:900;
+    margin-bottom:.85rem;
+    color:#333;
+    text-shadow: 2px 2px 3px rgba(225,255,255,0.56);
+}
+.hp-stats-list.hp-stats-list--gold {
+    background: none;
+    border: 0;
+}
+.hp-stats-list.hp-stats-list--gold li strong{
+    color:#f8b300;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.56);
+}
+.hp-stats-list li{
+    font-size:.9rem;
+}
+.hp-stats-list small{
+    font-size: smaller;
+}
+</style><style id="cssCardZoom">
+/********************************************************************
+	Card - zoom hover
+	Place the 'hp-card--zoom' class in a wrapper container 
+	the cards.
+********************************************************************/
+.hp-card--zoom .plugin-card__container {
+	display: block;
+	position: relative;
+}
+.hp-card--zoom .plugin-card__container::after {
+	content: '';
+	display: block;
+	padding-top: 75%;
+	width: 100%;
+}
+.hp-card--zoom .plugin-card__body {
+	background: rgba(0, 0, 0, 0.7);
+	bottom: 0;
+	padding: 0 !important;
+	position: absolute;
+	width: 100%;
+	z-index: 10;
+}
+.hp-card--zoom .plugin-card__body > :not(h2,h3) {
+	display: none;
+}
+.hp-card--zoom .plugin-card__body :is(h2,h3) {
+	background: linear-gradient(90deg, rgba(0,0,0,.8) 0%, rgba(20,20,20,.75) 35%, rgba(34,34,34,.75) 100%);
+	font-size: 1rem;
+	margin: 0 !important;
+	padding: 1.5rem !important;
+	text-transform: uppercase;
+}
+.hp-card--zoom .plugin-card__body a {
+	border: none !important;
+	color: var(--hp-color--gold) !important;
+	text-decoration: none !important;
+}
+.hp-card--zoom .plugin-card__media {
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.hp-card--zoom .plugin-card__background { 
+	display: none;	
+}
+.hp-card--zoom .plugin-card__media img {
+	height: 100% !important;
+	object-fit: cover;
+	object-position: 50% 50%;
+	transition: all 0.5s ease-in-out;
+}
+.hp-card--zoom .plugin-card__container:hover .plugin-card__media img, 
+.hp-card--zoom .plugin-card__container:focus .plugin-card__media img, 
+.hp-card--zoom .plugin-card:hover .plugin-card__media img, 
+.hp-card--zoom .plugin-card:focus .plugin-card__media img {
+	transform: scale(1.2);
+}
+@media (prefers-reduced-motion) {
+	.hp-card--zoom .plugin-card__media img {
+		transition: none;
+	}
+}
+</style><style>
+/* MARCOM subpage hero veritcal-align adjustment: Site-Head */
+#hero-feature-subpage.marcom-hero img {
+  vertical-align: bottom;
+}
+@media (min-width: 800px) {
+  #hero-feature-subpage.marcom-hero .content {
+    margin-block-end: 0rem;
+  }
+}
+/* MARCOM subpage hero veritcal-align adjustment: Site-Head */
+</style><style>
+.cwf-area--header .plugin-notification {
+  margin-bottom: 0;
+}
+/*! Plugin - Notification v1.3.0 | Core v1.7.0 */
+.plugin-notification{background-color:var(--cwf-notification--primary-color);border-bottom:10px solid var(--cwf-notification--secondary-color);color:var(--cwf-notification--body-color);font-family:var(--cwf-font--sans-serif,inherit);margin-bottom:1rem;padding:.5rem 0}@media (min-width:1024px){.plugin-notification{padding:1rem 0}}.plugin-notification[aria-expanded=false]{display:none}.plugin-notification--alert{--cwf-notification--body-color:#fff;--cwf-notification--primary-color:#b50000;--cwf-notification--secondary-color:#820000;--cwf-notification--title-color:#fff}.plugin-notification--info{--cwf-notification--body-color:#fff;--cwf-notification--primary-color:#006894;--cwf-notification--secondary-color:#004461;--cwf-notification--title-color:#fff}.plugin-notification--primary{--cwf-notification--body-color:#fff;--cwf-notification--primary-color:#222;--cwf-notification--secondary-color:#444;--cwf-notification--title-color:#f8b300}.plugin-notification--secondary{--cwf-notification--body-color:#000;--cwf-notification--primary-color:#f8b300;--cwf-notification--secondary-color:#c58e00;--cwf-notification--title-color:#000}.plugin-notification--success{--cwf-notification--body-color:#fff;--cwf-notification--primary-color:#007e00;--cwf-notification--secondary-color:#004b00;--cwf-notification--title-color:#fff}.plugin-notification__container{align-items:center;display:flex;flex-direction:column;flex-wrap:wrap;justify-content:space-between;margin:var(--cwf-contain--margin,0 auto);max-width:var(--cwf-contain--max-width,1400px);width:var(--cwf-contain--width,100%)}@media (min-width:1024px){.plugin-notification__container{flex-direction:row;flex-wrap:nowrap}}.plugin-notification__header{align-items:center;color:var(--cwf-notification--title-color);display:flex;flex-wrap:nowrap;font-size:1.25rem;font-weight:700;justify-content:center;order:1;padding:.5rem 1rem}@media (min-width:1024px){.plugin-notification__header{align-items:flex-start;border-right:1px solid var(--cwf-notification--secondary-color);justify-content:flex-start;margin:0 1rem 0 0;max-width:480px;order:0}}.plugin-notification__icon,.plugin-notification__title{padding:0 .5rem}.plugin-notification__body{align-items:center;justify-content:center;order:1;padding:0 .5rem 1rem;text-align:center}@media (min-width:1024px){.plugin-notification__body{margin-right:auto;order:0;padding:0 1rem;text-align:left}}.plugin-notification__body>:first-child{margin-top:0!important}.plugin-notification__body>:last-child{margin-bottom:0!important}.plugin-notification__body>:first-child{padding-top:0!important}.plugin-notification__body>:last-child{padding-bottom:0!important}.plugin-notification__body ol,.plugin-notification__body ul{padding-left:1rem}.plugin-notification__body ol ol,.plugin-notification__body ol ul,.plugin-notification__body ul ol,.plugin-notification__body ul ul{padding-left:1.25rem}.plugin-notification__body a{color:var(--cwf-notification--title-color)}.plugin-notification__body .cwf-button{background-color:var(--cwf-notification--primary-color)!important;border-color:var(--cwf-notification--secondary-color)!important;border-width:2px;color:var(--cwf-notification--body-color)!important;margin:0 1rem}.plugin-notification__body .cwf-button:focus,.plugin-notification__body .cwf-button:hover{background-color:var(--cwf-notification--secondary-color)!important}.plugin-notification__close{--cwf-notification__close--background-color:transparent;--cwf-notification__close--color:#000;align-items:center;align-self:flex-end;background-color:var(--cwf-notification__close--background-color);border:none;border-radius:4px;color:var(--cwf-notification__close--color);color:var(--cwf-notification--body-color);display:flex;font-size:var(--cwf-notification--font-size);justify-content:right;line-height:1;margin:0 1rem;padding:.25rem}@media (min-width:1024px){.plugin-notification__close{align-self:flex-start;width:auto}}.plugin-notification__close:hover{cursor:pointer}.plugin-notification__close:focus,.plugin-notification__close:hover{background-color:var(--cwf-notification--secondary-color)}.plugin-notification__close span{align-content:flex-end}.plugin-notification__times{flex:1;margin-left:.5rem;min-width:.8rem;width:.8rem}.plugin-notification--compact{padding:.5rem 0}.plugin-notification--compact .plugin-notification__header{border:none;font-size:1rem;margin-right:0}.plugin-notification--compact .plugin-notification__close{font-size:.9rem}@media (min-width:1024px){.plugin-notification__container--stacked{flex-direction:row-reverse;flex-wrap:wrap;padding:0 1rem}.plugin-notification__container--stacked .plugin-notification__body,.plugin-notification__container--stacked .plugin-notification__header{border-right:none;max-width:none;padding:0;width:100%}.plugin-notification__container--stacked .plugin-notification__header{flex:1}.plugin-notification__container--stacked .plugin-notification__body{padding-left:3rem}.plugin-notification__container--stacked .plugin-notification__close{align-self:flex-start;order:-1}.plugin-notification--compact .plugin-notification__container--stacked .plugin-notification__body{padding-left:2.6rem!important}}
+/*******************************************
+	Notification - hide notifications in the main content region. 
+*/
+#cwf-content .plugin-notification {
+	display: none;
+}
+</style><!-- CSS Logging graphic -->
+<style>
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid #fcf;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: var(--cwf-color--gold) transparent transparent transparent;
+  }
+  .lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+  }
+  .lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+  .lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+  }
+  @keyframes lds-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+</style>
+    </head>
+    <body>
+        <nav id="skip-links" class="cwf-skip-links" aria-label="Skip links">
+            <a class="cwf-skip-links__link" href="#cwf-content" tabindex="1">
+            Skip to main content
+        </a><a class="cwf-skip-links__link" href="#cwf-footer--hp" tabindex="2">
+            Skip to footer
+        </a>
+        </nav>
+        <aside class="cwf-area cwf-area--full-width cwf-area--header">
+            <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NS6JQC3G"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --><!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TZGRSW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<!-- VCUHP - Notificaiton list (content type): BEGIN -->
+<!-- section id: 136313 -->
+<!-- publish section id: 138588 -->
+<div role="banner" aria-label="VCU Alert announcement" class="important-msg-box alert-box">
+<!-- VCUHP - Notification (navigation) --><!-- VCUHP - Notification (ocntent type): END -->
+</div>
+<!-- VCUHP - Notificaiton list (content type): END -->
+<style>
+.hp-header {
+  /* border-bottom: 2px solid #e5e5e5; */
+  box-sizing: border-box;
+  height: 4rem;
+}
+.hp-header--light {
+  background-color: #fff;
+}
+.hp-header--dark {
+  background-color: #222;
+}
+.hp-header__container {}
+.hp-header__controller {
+  align-items: center;
+  display: grid;
+  grid-template-areas: "b a c";
+  grid-template-columns: 72px 1fr 72px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+@media (min-width: 555px) {
+  .hp-header__controller {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 910px) {
+  .hp-header__controller {
+    grid-template-areas: "a b c";
+    grid-template-columns: 210px 1fr min-content;
+  }
+}
+@media (min-width: 1600px) {
+  .hp-header__controller {
+    max-width: 1600px;
+  }
+}
+.hp-header__column {
+  display: flex;
+}
+.hp-header__column:nth-child(1) {
+  display: flex;
+  grid-area: a;
+  justify-content: center;
+}
+@media (min-width: 732px) {
+  .hp-header__column:nth-child(1) {
+    /* display: flex; */
+  }
+}
+.hp-header__column:nth-child(2) {
+  grid-area: b;
+}
+.hp-header__column:nth-child(3) {
+  display: flex;
+  grid-area: c;
+  justify-content: flex-end;
+}
+@media (min-width: 895px) {
+  .hp-header__column:nth-child(3) {
+    display: flex;
+  }
+}
+.hp-header__logo-container {
+  align-items: center;
+  display: flex;
+  height: 3rem;
+  justify-content: center;
+}
+.hp-header__logo {
+  height: 100% !important;
+  width: 174px;
+  vertical-align: bottom;
+}
+</style><style>
+/* Nav styles */
+html {
+/* this was to help scrolling full menu during development
+   we don't need this anymore */
+  /* scrollbar-gutter: stable; */
+}
+.hp-nav {
+  --hp-nav--height: 4rem;
+}
+.hp-header--dark .hp-nav {
+  --hp-nav--full--background-color: #222;
+  --hp-nav--full--level-1-color: #f8b300;
+  --hp-nav--full--level-2-color: #fff;
+  --hp-nav--full--underline-color: #f8b300;
+  --hp-nav--full--hover-color: #f8b300;
+  --hp-nav--full--section--hover-color: #fff;
+  --hp-nav--full--section--underline-color: #fff;
+}
+.hp-header--light .hp-nav {
+  --hp-nav--full--background-color: #fff;
+  --hp-nav--full--level-1-color: #111;
+  --hp-nav--full--level-2-color: #333;
+  --hp-nav--full--underline-color: #f8b300;
+}
+.hp-header--dark .hp-nav__hamburger {
+  --hp-nav__hamburger--background-color: transparent;
+  --hp-nav__hamburger--foreground-color: #fff;
+  --hp-nav__hamburger--active--background-color: rgba(0,0,0,.05);
+  --hp-nav__hamburger--active--foreground-color: #fff;
+  --hp-nav__hamburger--hover-color: #f8b300;
+}
+.hp-header--light .hp-nav__hamburger {
+  --hp-nav__hamburger--background-color: transparent;
+  --hp-nav__hamburger--foreground-color: #333;
+  --hp-nav__hamburger--active--background-color: rgba(255,255,255,.05);
+  --hp-nav__hamburger--active--foreground-color: #000;
+  --hp-nav__hamburger--hover-color: #f8b300;
+}
+.hp-header--dark .hp-nav--short {
+  --hp-nav--short--background-color: #fff;
+  --hp-nav--short--foreground-color: #fff;
+  --hp-nav--short--level-1-color: #f8b300;
+  --hp-nav--short--level-2-background-color: #fff;
+  --hp-nav--short--level-2-color: #222;
+  --hp-nav--short--hover-color: #f8b300;
+  --hp-nav--short--hover-background-color: #333;
+  --hp-nav--short--underline-color: #f8b300;
+}
+.hp-header--light .hp-nav--short {
+  --hp-nav--short--background-color: #fff;
+  --hp-nav--short--foreground-color: #333;
+  --hp-nav--short--level-1-color: #f8b300;
+  --hp-nav--short--level-2-background-color: #fff;
+  --hp-nav--short--level-2-color: #fff;
+  --hp-nav--short--hover-color: #f8b300;
+  --hp-nav--short--hover-background-color: #f5f5f5;
+  --hp-nav--short--underline-color: #f8b300;
+}
+.hp-header--dark .hp-nav--action {
+  --hp-nav--action--foreground-color: #fff;
+  --hp-nav--action--icon-color: #f8b300;
+}
+.hp-header--light .hp-nav--action {
+  --hp-nav--action--foreground-color: #333;
+  --hp-nav--action--icon-color: #f8b300;
+}
+.hp-nav__hamburger {
+  --cwf-font--sans-serif: "Roboto";
+  align-items: center;
+  background-color: var(--hp-nav__hamburger--background-color);
+  border: none;
+  color: var(--hp-nav__hamburger--foreground-color);
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  font-family: var(--cwf-font--sans-serif,inherit);
+  font-size: 0;
+  font-weight: 700;
+  height: 72px;
+  justify-content: space-evenly;
+  /* left: 0; */
+  line-height: 1.555556rem;
+  /* padding: 0.5rem 0; */
+  /* position: absolute; */
+  /* top: 0; */
+  /* z-index: 100001; */
+  text-transform: uppercase;
+  z-index: 2;
+  white-space: nowrap;
+}
+@media (min-width: 655px) {
+  .hp-nav__hamburger {
+    font-size: 0.888889rem;
+    min-width: 133px;
+  }
+}
+.hp-nav__hamburger:before {
+  content: "\f0c9";
+  font-family: Font Awesome\ 6 Free;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 900;
+  line-height: 1;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+  text-rendering: auto;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 2rem;
+  width: 2rem;
+}
+#hp-nav-hamburger-full-menu:focus,
+#hp-nav-hamburger-full-menu:hover {
+  color: var(--hp-nav__hamburger--hover-color);
+}
+#hp-nav-hamburger-full-menu:focus:before,
+#hp-nav-hamburger-full-menu:hover:before {
+  background-color: #3c3c3c;
+  border-radius: 2rem;
+  color: #fff;
+}
+.hp-nav__hamburger--full-menu--close {
+  background-color: #303030;
+  color: var(--hp-nav__hamburger--foreground-color);
+  /* flex-direction: row-reverse; */
+  /* min-width: 7rem; */
+  /* position: absolute; */
+  /* right: 0; */
+  justify-content: unset;
+  width: 100%;
+}
+.hp-nav__hamburger--full-menu--close:focus,
+.hp-nav__hamburger--full-menu--close:hover {
+  color: var(--hp-nav__hamburger--hover-color);
+}
+@media (min-width: 480px) {
+  .hp-nav__hamburger--full-menu--close {
+    right: 30%;
+  }
+}
+@media (min-width: 1024px) {
+  .hp-nav__hamburger--full-menu--close {
+    right: 0;
+  }
+}
+.hp-nav__hamburger--full-menu--close:before {
+  content: "\f00d";
+  font-size: 1.5rem;
+}
+.hp-nav--full {
+  /* display: none; */
+  height: 100%;
+  margin: 0 auto;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  left: 0;
+  top: 0;
+}
+.hp-nav--full.hp-nav--full-menu--hidden {
+  display: none;
+  opacity: 0;
+}
+.hp-nav--full-menu--hidden.animating {
+  animation: fadeOut;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
+}
+.hp-nav--full-menu--visible {
+  display: block;
+  z-index: 10000;
+}
+.hp-nav--full.hp-nav--full-menu--visible.animating {
+  animation: fadeIn;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
+}
+.hp-nav--full .hp-nav__container {
+  background-color: rgba(0,0,0,.68);
+  display: flex;
+  height: 100%;
+  align-items: normal;
+}
+@media (min-width: 1024px) {
+  .hp-nav--full .hp-nav__container {
+    align-items: center;
+  }
+}
+.hp-nav--full .hp-nav__controller {
+  background-color: var(--hp-nav--full--background-color);
+  width: 100%;
+}
+@media (min-width: 480px) {
+  .hp-nav--full .hp-nav__controller {
+    width: 70%;
+  }
+}
+@media (min-width: 1024px) {
+  .hp-nav--full .hp-nav__controller {
+    width: 100%;
+  }
+}
+.hp-nav--full .hp-nav__list--level-1 a,
+.hp-nav--full .hp-nav__list--level-1 .hp-nav__link {
+  --hp-nav--full--mobile--level-1-color: #fff;
+  color: var(--hp-nav--full--mobile--level-1-color);
+  flex: 1;
+  font-weight: bold;
+  padding: 1rem 1.75rem;
+  text-decoration: none;
+}
+.hp-nav--full .hp-nav__list--level-1 a:focus,
+.hp-nav--full .hp-nav__list--level-1 a:hover,
+.hp-nav--full .hp-nav__list--level-1 .hp-nav__link:focus,
+.hp-nav--full .hp-nav__list--level-1 .hp-nav__link:hover {
+  --hp-nav--full--mobile--level-1-hover-color: #2f2f2f;
+  --hp-nav--full--mobile--level-1-background-hover-color: #f8b300;
+  color: var(--hp-nav--full--mobile--level-1-hover-color);
+  background-color: var(--hp-nav--full--mobile--level-1-background-hover-color);
+}
+.hp-nav--full .hp-nav__list--level-1 .hp-nav__item,
+.hp-nav--full .hp-nav__list--level-1 li {
+  display: flex;
+}
+.hp-nav--full .multilevel-linkul-0 li,
+.hp-nav--full .multilevel-linkul-0 .hp-nav__item,
+.hp-nav--full .hp-nav__list--level-2 li,
+.hp-nav--full .hp-nav__list--level-2 .hp-nav__item {
+}
+.hp-nav--full .hp-nav__item,
+.hp-nav--full li,
+.hp-nav--full .hp-nav__link,
+.hp-nav--full a {
+  display: flex;
+  position: relative;
+}
+.hp-nav--full .hp-nav__item,
+.hp-nav--full li {
+  flex-wrap: wrap;
+}
+@media (min-width: 1024px) {
+  .hp-nav--full .hp-nav__container {
+    background-color: var(--hp-nav--full--background-color);
+    height: 100vh;
+  }
+  .hp-nav--full .hp-nav__list--level-1 a,
+  .hp-nav--full .hp-nav__list--level-1 .hp-nav__link {
+    color: var(--hp-nav--full--level-1-color);
+    font-weight: bold;
+    padding: unset;
+  }
+  .hp-nav--full .hp-nav__list--level-1 a:focus,
+  .hp-nav--full .hp-nav__list--level-1 a:hover,
+  .hp-nav--full .hp-nav__list--level-1 .hp-nav__link:focus,
+  .hp-nav--full .hp-nav__list--level-1 .hp-nav__link:hover {
+    border-bottom: 1px solid var(--hp-nav--full--section--underline-color);
+    color: var(--hp-nav--full--section--hover-color);
+    background-color: transparent;
+  }
+  .hp-nav--full .hp-nav__list--level-1 .hp-nav__item,
+  .hp-nav--full .hp-nav__list--level-1 li {
+    display: block;
+  }
+  .hp-nav--full .hp-nav__item,
+  .hp-nav--full li,
+  .hp-nav--full .hp-nav__link,
+  .hp-nav--full a {
+    display: unset;
+    /* position: relative; */
+  }
+  .hp-nav--full .hp-nav__item,
+  .hp-nav--full li {
+    flex-wrap: unset;
+  }
+}
+.hp-nav--full .multilevel-linkul-0 a,
+.hp-nav--full .multilevel-linkul-0 .hp-nav__link,
+.hp-nav--full .hp-nav__list--level-2 a,
+.hp-nav--full .hp-nav__list--level-2 .hp-nav__link {
+  border-bottom: 1px solid #555;
+  color: var(--hp-nav--full--level-2-color);
+  line-height: 1.75;
+  /* padding: unset; */
+}
+.hp-nav--full .multilevel-linkul-0 a:focus,
+.hp-nav--full .multilevel-linkul-0 a:hover,
+.hp-nav--full .multilevel-linkul-0 .hp-nav__link:focus,
+.hp-nav--full .multilevel-linkul-0 .hp-nav__link:hover,
+.hp-nav--full .hp-nav__list--level-2 a:focus,
+.hp-nav--full .hp-nav__list--level-2 a:hover,
+.hp-nav--full .hp-nav__list--level-2 .hp-nav__link:focus,
+.hp-nav--full .hp-nav__list--level-2 .hp-nav__link:hover {
+  --hp-nav--full--mobile--level-1-hover-color: #2f2f2f;
+  --hp-nav--full--mobile--level-1-background-hover-color: #f8b300;
+  background-color: --hp-nav--full--mobile--level-1-background-hover-color;
+  color: var(--hp-nav--full--mobile--level-1-hover-color);
+  /* border-bottom: 1px solid transparent; */
+}
+.hp-nav--full .multilevel-linkul-0 li:last-child a,
+.hp-nav--full .multilevel-linkul-0 .hp-nav__item:last-child .hp-nav__link,
+.hp-nav--full .hp-nav__list--level-2 li:last-child a,
+.hp-nav--full .hp-nav__list--level-2 .hp-nav__item:last-child .hp-nav__link {
+  border-bottom: 1px solid transparent;
+}
+@media (min-width: 1024px) {
+  .hp-nav--full .multilevel-linkul-0 a,
+  .hp-nav--full .multilevel-linkul-0 .hp-nav__link,
+  .hp-nav--full .hp-nav__list--level-2 a,
+  .hp-nav--full .hp-nav__list--level-2 .hp-nav__link {
+    border-bottom: 1px solid var(--hp-nav--full--underline-color);
+    padding: unset;
+  }
+  .hp-nav--full .multilevel-linkul-0 a:focus,
+  .hp-nav--full .multilevel-linkul-0 a:hover,
+  .hp-nav--full .multilevel-linkul-0 .hp-nav__link:focus,
+  .hp-nav--full .multilevel-linkul-0 .hp-nav__link:hover,
+  .hp-nav--full .hp-nav__list--level-2 a:focus,
+  .hp-nav--full .hp-nav__list--level-2 a:hover,
+  .hp-nav--full .hp-nav__list--level-2 .hp-nav__link:focus,
+  .hp-nav--full .hp-nav__list--level-2 .hp-nav__link:hover {
+    background-color: transparent;
+    color: var(--hp-nav--full--hover-color);
+    border-bottom: 1px solid transparent !important;
+  }
+  .hp-nav--full .multilevel-linkul-0 li:last-child a,
+  .hp-nav--full .multilevel-linkul-0 .hp-nav__item:last-child .hp-nav__link,
+  .hp-nav--full .hp-nav__list--level-2 li:last-child a,
+  .hp-nav--full .hp-nav__list--level-2 .hp-nav__item:last-child .hp-nav__link {
+    border-bottom: 1px solid var(--hp-nav--full--underline-color);
+  }
+}
+.hp-nav--full .hp-nav__list {
+  list-style-type: none;
+  padding-bottom: 0.5rem;
+  padding-left: 0;
+  padding-top: 0.5rem;
+  margin-bottom: 0;
+}
+.hp-nav--full .multilevel-linkul-0,
+.hp-nav--full .hp-nav__list--level-2 {
+    list-style-type: none;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+  /* padding-left: 1rem; */
+    width: 100%;
+}
+.hp-nav--full .hp-nav__list--level-2,
+.hp-nav--full .multilevel-linkul-0 {
+  /* hides quicklinks, level 2 links */
+  display: none;
+}
+@media (min-width: 1024px) {
+  .hp-nav--full .multilevel-linkul-0,
+  .hp-nav--full .hp-nav__list--level-2 {
+    display: block;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+  }
+}
+.hp-nav--full .hp-nav__toggle[aria-expanded=true] + .hp-nav__list--level-2,
+.hp-nav--full .hp-nav__toggle[aria-expanded=true] + .multilevel-linkul-0 {
+  background-color: #333;
+  display: block;
+}
+.hp-nav--full .hp-nav__toggle {
+  --hp-nav__toggle--background-color: transparent;
+  --hp-nav__toggle--foreground-color: #fff;
+  background-color: var(--hp-nav__toggle--background-color);
+  border: none;
+  color: var(--hp-nav__toggle--foreground-color);
+  font-size: 1rem;
+  min-height: 3rem;
+  padding: 0;
+  width: 3rem;
+}
+@media (min-width: 1024px) {
+  .hp-nav--full .hp-nav__toggle {
+    display: none;
+  }
+}
+.hp-nav--full .hp-nav__icon:before {
+  content: "\f078";
+}
+.hp-nav--full .hp-nav__icon {
+  text-rendering: auto;
+  display: inline-block;
+  font-family: Font Awesome\ 6 Free;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 900;
+  line-height: 1;
+  transition: transform .1s ease-in-out;
+}
+.hp-nav--full .hp-nav__toggle:hover {
+  --hp-nav__toggle--background-hover-color: #f8b300;
+  --hp-nav__toggle--foreground-hover-color: #2f2f2f;
+  background-color: var(--hp-nav__toggle--background-hover-color);
+  color: var(--hp-nav__toggle--foreground-hover-color);
+}
+.hp-nav--full .hp-nav__toggle[aria-expanded=true] .hp-nav__icon {
+  transform: rotate(180deg);
+}
+/* .hp-nav__hamburger--full-menu {
+  position: absolute;
+  height: 64px;
+  width: 64px;
+  z-index: 2;
+} */
+@media (min-width: 1024px) {
+  .hp-nav--full .hp-nav__controller {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+  .hp-nav--full .hp-nav__list--level-1 {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    display: grid;
+    grid-template-areas: "a c e"
+      "b d f";
+    grid-template-columns: 1fr 1fr 1fr;
+    /* max-width: 1024px;
+    margin: 0 auto; */
+    /* padding: 2rem; */
+    grid-gap: 1rem;
+  }
+  .hp-nav--full .hp-nav__list--level-1 > .hp-nav__item {
+    padding: 1rem;
+  }
+  .hp-nav--full .hp-nav__list--level-1 > .hp-nav__item > a,
+  .hp-nav--full .hp-nav__list--level-1 > .hp-nav__item > .hp-nav__link {
+    font-family: Roboto, sans-serif;
+    font-size: 1.375rem;
+  }
+  .hp-nav--full a,
+  .hp-nav--full .hp-nav__link {
+    text-decoration: none;
+  }
+  .hp-nav--full .hp-nav__item {
+    /* flex: 1; */
+  }
+}
+/* short menu */
+.hp-nav--short {}
+.hp-nav--short .hp-nav__controller {
+  display: flex;
+  height: var(--hp-nav--height);
+}
+.hp-nav--short .hp-nav__list {
+  list-style-type: none;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-top: 0;
+  margin-bottom: 0;
+  margin-right: 0.75rem;
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  position: relative;
+}
+@media (min-width: 1024px) {
+  .hp-nav--short .hp-nav__list {
+    gap: 2rem;
+  }
+}
+.hp-nav--short .hp-nav__list--level-1 .hp-nav__item:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: transparent;
+  right: 0;
+  height: 9px;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  z-index: 100;
+}
+.hp-nav--short .hp-nav__list--level-2 .hp-nav__item:after {
+  content: unset;
+}
+/*
+  Without the quicklinks button:
+  can add why vcu link back in 622px
+  admissions at 499px
+  hover programs at 384px
+*/
+.hp-nav--short .hp-nav__list--level-1 .hp-nav__item:nth-last-child(1) {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .hp-nav--short .hp-nav__list--level-1 .hp-nav__item:nth-last-child(1) {
+    display: list-item;
+  }
+}
+.hp-nav--short .hp-nav__list--level-1 .hp-nav__item:nth-last-child(2) {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .hp-nav--short .hp-nav__list--level-1 .hp-nav__item:nth-last-child(2) {
+    display: list-item;
+  }
+}
+.hp-nav--short .hp-nav__list--level-1 .hp-nav__item:nth-last-child(3) {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .hp-nav--short .hp-nav__list--level-1 .hp-nav__item:nth-last-child(3) {
+    display: list-item;
+  }
+}
+.hp-nav--short .hp-nav__list--level-2 {
+  align-items: flex-start;
+  background-color: var(--hp-nav--short--level-2-background-color);
+  display: none;
+  flex-direction: column;
+  gap: 0;
+  position: absolute;
+  margin-right: 0;
+  min-width: 18rem;
+  top: 77px;
+  border: 1px solid var(--hp-nav--short--underline-color);
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  left: -6rem;
+  z-index: 1;
+}
+@media (min-width: 384px) {
+  .hp-nav--short .hp-nav__item:active .hp-nav__list--level-2,
+  .hp-nav--short .hp-nav__item:focus .hp-nav__list--level-2,
+  .hp-nav--short .hp-nav__item:hover .hp-nav__list--level-2,
+  .hp-nav--short .hp-nav__item.hp-nav__item--active .hp-nav__list--level-2 {
+    display: flex;
+    z-index: 100;
+  }
+}
+.hp-nav--short .hp-nav__item:active .hp-nav__list--level-2:before,
+.hp-nav--short .hp-nav__item:focus .hp-nav__list--level-2:before,
+.hp-nav--short .hp-nav__item:hover .hp-nav__list--level-2:before,
+.hp-nav--short .hp-nav__item.hp-nav__item--active .hp-nav__list--level-2:before {
+  content: "";
+  position: absolute;
+  border-bottom: 18px solid #f8b300;
+  border-left: 18px solid transparent;
+  border-right: 18px solid transparent;
+  top: -18px;
+  left: 50%;
+  margin-left: -18px;
+  z-index: 10000;
+}
+.hp-nav--short .hp-nav__item--active .hp-nav__list--level-2:after,
+.hp-nav--short .hp-nav__item:active .hp-nav__list--level-2:after,
+.hp-nav--short .hp-nav__item:focus .hp-nav__list--level-2:after,
+.hp-nav--short .hp-nav__item:hover .hp-nav__list--level-2:after {
+  content: "";
+  position: absolute;
+  border-bottom: 17px solid var(--hp-nav--short--level-2-background-color);
+  border-left: 17px solid transparent;
+  border-right: 17px solid transparent;
+  top: -17px;
+  left: 50%;
+  margin-left: -17px;
+  z-index: 10000;
+}
+.hp-nav--short .hp-nav__item--active .hp-nav__list--level-2 .hp-nav__item,
+.hp-nav--short .hp-nav__item:active .hp-nav__list--level-2 .hp-nav__item,
+.hp-nav--short .hp-nav__item:focus .hp-nav__list--level-2 .hp-nav__item,
+.hp-nav--short .hp-nav__item:hover .hp-nav__list--level-2 .hp-nav__item {
+  /* padding-left: 1rem; */
+  width: 100%;
+}
+.hp-nav--short .hp-nav__item--active .hp-nav__list--level-2 .hp-nav__link,
+.hp-nav--short .hp-nav__item:active .hp-nav__list--level-2 .hp-nav__link,
+.hp-nav--short .hp-nav__item:focus .hp-nav__list--level-2 .hp-nav__link,
+.hp-nav--short .hp-nav__item:hover .hp-nav__list--level-2 .hp-nav__link {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.hp-nav--short .hp-nav__item {
+  position: relative;
+}
+.hp-nav--short a,
+.hp-nav--short .hp-nav__link {
+  align-items: center;
+  color: var(--hp-nav--short--foreground-color);
+  display: flex;
+  font-family: Roboto, sans-serif;
+  font-size: 0.888889rem;
+  height: var(--hp-nav--height);
+  margin: 0 .25rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.hp-nav--short a:focus,
+.hp-nav--short .hp-nav__link:focus,
+.hp-nav--short a:hover,
+.hp-nav--short .hp-nav__link:hover {
+  color: var(--hp-nav--short--hover-color)
+}
+.hp-nav--short .hp-nav__list--level-2 a,
+.hp-nav--short .hp-nav__list--level-2 .hp-nav__link {
+  color: var(--hp-nav--short--level-2-color);
+  font-size: 1.111111rem;
+  font-weight: 500;
+  height: 2rem;
+  text-transform: none;
+}
+.hp-nav--short .hp-nav__list--level-2 a:focus,
+.hp-nav--short .hp-nav__list--level-2 a:hover,
+.hp-nav--short .hp-nav__list--level-2 .hp-nav__link:focus,
+.hp-nav--short .hp-nav__list--level-2 .hp-nav__link:hover {
+  background-color: var(--hp-nav--short--hover-background-color);
+  color: var(--hp-nav--short--hover-color);
+}
+.hp-nav--short .hp-nav__list--level-2 .hp-nav__item:first-child a,
+.hp-nav--short .hp-nav__list--level-2 .hp-nav__item:first-child .hp-nav__link {
+  font-family: Roboto, sans-serif;
+  font-size: 1.333333rem;
+  font-weight: bold;
+  margin-bottom: .75rem;
+  text-transform: uppercase;
+}
+.hp-nav--short .hp-nav__list--level-2 .hp-nav__item:first-child a:after,
+.hp-nav--short .hp-nav__list--level-2 .hp-nav__item:first-child .hp-nav__link:after {
+  margin-left: 0.5rem;
+  position: static;
+}
+.hp-nav--short .hp-nav__list--level-2 .hp-nav__item--active a:after,
+.hp-nav--short .hp-nav__list--level-2 .hp-nav__item a:active:after,
+.hp-nav--short .hp-nav__list--level-2 .hp-nav__item a:focus:after,
+.hp-nav--short .hp-nav__list--level-2 .hp-nav__item a:hover:after,
+.hp-nav--short .hp-nav__list--level-2 .hp-nav__item .hp-nav__link:hover:after {
+  color: var(--hp-nav--short--foreground-color);
+}
+.hp-nav--short .hp-nav__list--level-2 .hp-nav__item {
+  padding-left: 1rem;;
+}
+.hp-nav--short .hp-nav__list--level-2 .hp-nav__item:first-child {
+  padding-left: 0;
+}
+.hp-nav--short .hp-nav__list--level-2 .hp-nav__item:first-child:after {
+  content: " ";
+  display: block;
+  height: 1px;
+  background-color: #bebebe;
+  width: calc(100% - 1rem);
+  margin: 0 auto;
+  top: unset;
+  bottom: 9px;
+}
+.hp-nav--short .hp-nav__list--level-1 > .hp-nav__item:hover > a:after {
+  /* display: block;
+  content: " ";
+  height: 4px;
+  background-color: var(--hp-nav--short--underline-color);
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+  left: 0; */
+}
+/* action menu */
+.hp-nav--action {
+  display: none;
+}
+@media (min-width: 655px) {
+  .hp-nav--action {
+    display: flex;
+  }
+}
+.hp-nav--action .hp-nav__controller {
+  display: flex;
+  height: var(--hp-nav--height);
+  justify-content: flex-end;
+}
+.hp-nav--action .hp-nav__list {
+  list-style-type: none;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-top: 0;
+  margin-bottom: 0;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+}
+.hp-nav--action a,
+.hp-nav--action .hp-nav__link {
+  align-items: center;
+  color: var(--hp-nav--action--foreground-color);
+  display: flex;
+  font-family: Roboto, sans-serif;
+  /* font-size: 0.777778rem; */
+  font-size: 0.888889rem;
+  font-weight: bold;
+  /* height: 64px; */
+  padding: 0 0.5rem;
+  text-decoration: none;
+  /* text-transform: uppercase; */
+}
+.hp-nav--action a:focus,
+.hp-nav--action a:hover,
+.hp-nav--action .hp-nav__link:focus,
+.hp-nav--action .hp-nav__link:hover {
+  background-color: #3c3c3c;
+  border-radius: 1rem;
+}
+/* .hp-nav--action .hp-nav__item a:before,
+.hp-nav--action .hp-nav__item .hp-nav__link:before {
+  color: var(--hp-nav--action--icon-color);
+  font-family: Font Awesome\ 6 Free;
+  font-size: 0.777778rem;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 900;
+  line-height: 1;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  text-rendering: auto;
+}
+.hp-nav--action .hp-nav__item:nth-child(1) a:before,
+.hp-nav--action .hp-nav__item:nth-child(1) .hp-nav__link:before {
+  content: "\f304";
+}
+.hp-nav--action .hp-nav__item:nth-child(2) a:before,
+.hp-nav--action .hp-nav__item:nth-child(2) .hp-nav__link:before {
+  content: "\f3c5";
+}
+.hp-nav--action .hp-nav__item:nth-child(3) a:before,
+.hp-nav--action .hp-nav__item:nth-child(3) .hp-nav__link:before {
+  content: "\f007";
+} */
+.ws-website-info {
+  z-index: 9999;
+}
+/* Quicklinks */
+.hp-header--dark .hp-nav--quick {
+  --hp-nav--quick--background-color: #fff;
+  --hp-nav--quick--foreground-color: #fff;
+  --hp-nav--quick--level-1-color: #f8b300;
+  --hp-nav--quick--level-2-background-color: #222;
+  --hp-nav--quick--level-2-color: #fff;
+  --hp-nav--quick--hover-color: #f8b300;
+  --hp-nav--quick--hover-background-color: #333;
+  --hp-nav--quick--underline-color: #f8b300;
+}
+.hp-header--light .hp-nav--quick {
+  --hp-nav--quick--background-color: #fff;
+  --hp-nav--quick--foreground-color: #333;
+  --hp-nav--quick--level-1-color: #f8b300;
+  --hp-nav--quick--level-2-background-color: #fff;
+  --hp-nav--quick--level-2-color: #333;
+  --hp-nav--quick--hover-color: #f8b300;
+  --hp-nav--quick--hover-background-color: #f5f5f5;  --hp-nav--quick--underline-color: #f8b300;
+}
+.hp-nav__hamburger--quick {
+  height: 4rem;
+  min-width: 2.222223rem;
+}
+@media (min-width: 1024px) {
+  .hp-nav__hamburger--quick {
+    display: none;
+  }
+}
+.hp-nav__hamburger--quick:before {
+  content: "\f142";
+  font-size: 1.111111rem;
+}
+.hp-nav__hamburger--quick:focus:before,
+.hp-nav__hamburger--quick:hover:before {
+  background-color: #3c3c3c;
+  border-radius: 2rem;
+}
+.hp-nav--quick .hp-nav__list {
+  list-style-type: none;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  align-items: center;
+  display: flex;
+}
+@media (min-width: 655px) {
+  .hp-nav--quick .hp-nav__list {
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+  }
+}
+.hp-nav__hamburger--search {
+  height: 4rem;
+  min-width: 2rem;
+  display: none;
+}
+@media (min-width: 500px) {
+  .hp-nav__hamburger--search {
+    display: flex;
+  }
+}
+.hp-nav__hamburger--search:before {
+  align-items: center;
+  content: "\f002";
+  display: flex;
+  font-size: 1rem;
+  justify-content: center;
+  height: 2rem;
+  width: 2rem;
+}
+.hp-nav__hamburger--search:focus:before,
+.hp-nav__hamburger--search:hover:before {
+  background-color: #3c3c3c;
+  border-radius: 2rem;
+}
+.hp-nav--quick .hp-nav__controller {
+  display: flex;
+  justify-content: flex-end;
+}
+.hp-nav--quick .hp-nav__item {
+  position: relative;
+}
+.hp-nav--quick .hp-nav__list--level-2 a:focus,
+.hp-nav--quick .hp-nav__list--level-2 a:hover,
+.hp-nav--quick .hp-nav__list--level-2 .hp-nav__link:focus,
+.hp-nav--quick .hp-nav__list--level-2 .hp-nav__link:hover {
+  background-color: var(--hp-nav--quick--hover-background-color);
+}
+.hp-nav--quick .hp-nav__list--level-2 {
+  align-items: flex-start;
+  background-color: var(--hp-nav--quick--level-2-background-color);
+  display: none;
+  flex-direction: column;
+  gap: 0;
+  position: absolute;
+  margin-left: 0;
+  margin-right: 0;
+  min-width: min-content;
+  /* top: 77px; */
+  border: 1px solid var(--hp-nav--quick--underline-color);
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  right: 0;
+  z-index: 10;
+}
+@media (min-width: 500px) {
+  .hp-nav--quick .hp-nav__list--level-2 {
+    /* right: -47px; */
+  }
+}
+.hp-nav--quick .hp-nav__item--active .hp-nav__list--level-2,
+.hp-nav--quick .hp-nav__item:active .hp-nav__list--level-2,
+.hp-nav--quick .hp-nav__item:focus .hp-nav__list--level-2,
+.hp-nav--quick .hp-nav__item:hover .hp-nav__list--level-2 {
+  /* display: flex; */
+}
+.hp-nav--quick .hp-nav__item .hp-nav__list--level-2 .hp-nav__item,
+.hp-nav--quick .hp-nav__item .hp-nav__list--level-2 .hp-nav__item {
+  width: 100%;
+}
+.hp-nav--quick .hp-nav__item .hp-nav__list--level-2 a,
+.hp-nav--quick .hp-nav__item .hp-nav__list--level-2 a {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.hp-nav--quick a,
+.hp-nav--quick .hp-nav__link {
+  align-items: center;
+  color: var(--hp-nav--quick--foreground-color);
+  display: flex;
+  font-family: Roboto, sans-serif;
+  font-size: 0.888889rem;
+  height: var(--hp-nav--height);
+  margin: 0 .25rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.hp-nav--quick .hp-nav__list--level-2 a,
+.hp-nav--quick .hp-nav__list--level-2 .hp-nav__link {
+  font-size: 1.111111rem;
+  font-weight: 500;
+  height: 2rem;
+  text-transform: none;
+}
+.hp-nav--quick .hp-nav__list--level-2 .hp-nav__item:first-child span {
+  color: var(--hp-nav--quick--foreground-color);
+  display: flex;
+  font-family: Roboto, sans-serif;
+  font-size: 1.333333rem;
+  font-weight: bold;
+  margin-bottom: .75rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.hp-nav--quick .hp-nav--quicklinks--hidden {
+  opacity: 0;
+}
+.hp-nav--quick .hp-nav--quicklinks--hidden.animating {
+  animation: fadeOut;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
+}
+.hp-nav--quick .hp-nav--quicklinks--visible {
+  display: block;
+  z-index: 10000;
+}
+.hp-nav--quick .hp-nav--quicklinks--visible.animating {
+  animation: fadeIn;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
+}
+.hp-nav--quick .hp-nav__list--level-2 .hp-nav__item:nth-child(5):before,
+.hp-nav--quick .hp-nav__list--level-2 .hp-nav__item:nth-child(11):before {
+  background-color: #484848;
+  content: " ";
+  display: block;
+  height: 2px;
+  margin-bottom: 0.75rem;
+  margin-top: 0.75rem;
+  width: 100%;
+}
+/* Search menu */
+.hp-nav--search {
+  /* display: none; */
+  margin: 0 auto;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  left: 0;
+  top: 0;
+}
+.hp-nav--search.hp-nav--search-menu--hidden {
+  opacity: 0;
+}
+.hp-nav--search-menu--hidden.animating {
+  animation: fadeOut;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
+}
+.hp-nav--search-menu--visible {
+  display: block;
+  z-index: 9999999999;
+}
+.hp-nav--search.hp-nav--search-menu--visible.animating {
+  animation: fadeIn;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
+}
+.hp-nav--search .hp-nav__container {
+  background-color: var(--hp-nav--search--background-color);
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.hp-nav--search .hp-nav__list--level-1 a,
+.hp-nav--search .hp-nav__list--level-1 .hp-nav__link {
+  color: var(--hp-nav--search--level-1-color);
+  font-weight: bold;
+}
+.hp-nav--search .hp-nav__list--level-1 a:focus,
+.hp-nav--search .hp-nav__list--level-1 a:hover,
+.hp-nav--search .hp-nav__list--level-1 .hp-nav__link:focus,
+.hp-nav--search .hp-nav__list--level-1 .hp-nav__link:hover {
+  border-bottom: 1px solid var(--hp-nav--search--underline-color);
+}
+.hp-nav--search .multilevel-linkul-0 a,
+.hp-nav--search .multilevel-linkul-0 .hp-nav__link,
+.hp-nav--search .hp-nav__list--level-2 a,
+.hp-nav--search .hp-nav__list--level-2 .hp-nav__link {
+  border-bottom: 1px solid var(--hp-nav--search--underline-color);
+  color: var(--hp-nav--search--level-2-color);
+  line-height: 1.75;
+}
+.hp-nav--search .multilevel-linkul-0 a:focus,
+.hp-nav--search .multilevel-linkul-0 a:hover,
+.hp-nav--search .multilevel-linkul-0 .hp-nav__link:focus,
+.hp-nav--search .multilevel-linkul-0 .hp-nav__link:hover,
+.hp-nav--search .hp-nav__list--level-2 a:focus,
+.hp-nav--search .hp-nav__list--level-2 a:hover,
+.hp-nav--search .hp-nav__list--level-2 .hp-nav__link:focus,
+.hp-nav--search .hp-nav__list--level-2 .hp-nav__link:hover {
+  /* color: var(--hp-nav--search--hover-color); */
+  border-bottom: none;
+}
+.hp-nav--search .hp-nav__list {
+  list-style-type: none;
+  padding-bottom: 0.5rem;
+  padding-left: 0;
+  padding-top: 0.5rem;
+  margin-bottom: 0;
+}
+.hp-nav--search .multilevel-linkul-0,
+.hp-nav--search .hp-nav__list--level-2 {
+    list-style-type: none;
+    padding-bottom: 0.5rem;
+    padding-left: 0;
+    padding-top: 0.5rem;
+    margin-bottom: 0;
+  /* padding-left: 1rem; */
+}
+/* .hp-nav__hamburger--search-menu {
+  position: absolute;
+  height: 64px;
+  width: 64px;
+  z-index: 2;
+} */
+@media (min-width: 1024px) {
+  .hp-nav--search .hp-nav__controller {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+  .hp-nav--search .hp-nav__list--level-1 {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    display: grid;
+    grid-template-areas: "a c e"
+      "b d f";
+    grid-template-columns: 1fr 1fr 1fr;
+    /* max-width: 1024px;
+    margin: 0 auto; */
+    /* padding: 2rem; */
+    grid-gap: 1rem;
+  }
+  .hp-nav--search .hp-nav__list--level-1 > .hp-nav__item {
+    padding: 1rem;
+  }
+  .hp-nav--search .hp-nav__list--level-1 > .hp-nav__item > a,
+  .hp-nav--search .hp-nav__list--level-1 > .hp-nav__item > .hp-nav__link {
+    font-family: Roboto, sans-serif;
+    font-size: 1.375rem;
+  }
+  .hp-nav--search a,
+  .hp-nav--search .hp-nav__link {
+    text-decoration: none;
+  }
+  .hp-nav--search .hp-nav__item {
+    /* flex: 1; */
+  }
+}
+/* Search menu in full nav */
+.hp-search {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+@media (min-width: 1024px) {
+  .hp-search {
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-top: 0;
+  }
+}
+.hp-search__controller {
+  align-items: left;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+@media (min-width: 1024px) {
+  .hp-search__controller {
+    align-items: center;
+    gap: 2rem;
+    flex-direction: row;
+  }
+}
+.hp-search__logo-container {
+  width: 174px;
+}
+.hp-nav--full a.hp-search__logo-link {
+  display: block;
+}
+.hp-search__column--form {
+  width: 100%;
+}
+.hp-search__logo {
+  vertical-align: middle;
+}
+.hp-nav__search .cwf-header__input {
+  color: #828282;
+  background-color: #303030;
+  border-color: transparent;
+  font-size: 1.5rem;
+  width: 100%;
+}
+.hp-nav__search .cwf-header__input#query:focus {
+  background-color: #fff;
+  color: #757575;
+}
+.hp-nav__search .cwf-header__label {
+  color: #999999;
+  font-size: 1rem;
+}
+.hp-nav__search .cwf-header__submit {
+  background-color: #1f1f1f;
+  color: #f8b300;
+  font-size: 1rem;
+  height: 2.4rem;
+  right: 0.2rem;
+  width: 2.4rem;
+}
+.hp-nav__search .cwf-header__submit:focus,
+.hp-nav__search .cwf-header__submit:hover {
+    background: var(--cwf-color--gold);
+    color: #000000;
+}
+.hp-nav__column-controller {
+  /* display: grid;
+  grid-template-columns: 3fr 1fr; */
+}
+@media (min-width: 1024px) {
+  .hp-nav__column-controller {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+  }
+}
+.hp-nav__column {
+}
+.hp-nav__column--quicklinks {
+}
+/* 8/17/23 - cc - No longer needed after moving Why VCU to the
+// 3rd spot in nav order
+.hp-nav__column--menu .hp-nav__item:nth-child(6) {
+  grid-area: e;
+}
+*/
+.hp-nav__column--quicklinks .hp-nav__list {
+  background-color: #303030;
+  border: 2px solid #f8b300;
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+}
+.hp-nav__column--quicklinks a,
+.hp-nav__column--quicklinks .hp-nav__link {
+  font-weight: normal;
+}
+.hp-nav__column--quicklinks a:active,
+.hp-nav__column--quicklinks a:focus,
+.hp-nav__column--quicklinks a:hover,
+.hp-nav__column--quicklinks .hp-nav__link:active,
+.hp-nav__column--quicklinks .hp-nav__link:focus,
+.hp-nav__column--quicklinks .hp-nav__link:hover {
+  color: #f8b300;
+}
+.hp-nav--full .hp-nav__column--quicklinks .hp-nav__list--level-2 a, .hp-nav--full .hp-nav__column--quicklinks .hp-nav__list--level-2 .hp-nav__link {
+  border-bottom-color: #fff;
+}
+@media (min-width: 1024px) {
+  .hp-nav--full .hp-nav__column--quicklinks .multilevel-linkul-0 li:last-child a, .hp-nav--full .hp-nav__column--quicklinks .multilevel-linkul-0 .hp-nav__item:last-child .hp-nav__link, .hp-nav--full .hp-nav__column--quicklinks .hp-nav__list--level-2 li:last-child a, .hp-nav--full .hp-nav__column--quicklinks .hp-nav__list--level-2 .hp-nav__item:last-child .hp-nav__link {
+    border-bottom: 1px solid #fff;
+  }
+}
+body.hp-nav--show-full-menu {
+    overflow: hidden
+}
+body.hp-nav--show-full-menu #hp-nav--full {
+  /*background: var(--hp-nav--full--background-color);*/
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  overflow: hidden;
+  right: 0;
+  top: 0;
+}
+body.hp-nav--show-full-menu #hp-nav-hamburger-full-menu-close {
+  left: 0;
+  position: absolute;
+  top: 0;
+  /* adjust back to normal since we took out scrollbar-gutter: stable */
+  /* width: calc(100% - 20px); */
+  width: 100%;
+}
+body.hp-nav--show-full-menu #hp-nav--full .hp-nav__container {
+    bottom: 0;
+    display: block;
+    left: 0;
+    overflow-y: auto;
+    /* padding-top: 55px; */
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+body.hp-nav--show-full-menu #hp-nav--full .hp-nav__controller {
+  height: auto;
+  min-height: calc(100%);
+  padding-bottom: 2rem;
+  padding-top: 72px;
+}
+@media (min-width: 1024px) {
+  body.hp-nav--show-full-menu #hp-nav--full .hp-nav__controller {
+    padding-top: 1rem;
+  }
+}
+body.hp-nav--show-full-menu #hp-nav--full .hp-nav__container .hp-nav__item[aria-expanded="true"] {
+    background: #000000;
+}
+@media (min-width: 1024px) {
+  body.hp-nav--show-full-menu #hp-nav--full .hp-nav__container .hp-nav__item[aria-expanded="true"] {
+    background: unset;
+  }
+}
+  @media (min-width: 1024px) {
+  body.hp-nav--show-full-menu #hp-nav--full .hp-nav__container {
+    padding-top: 100px;
+  }
+}
+.hp-nav__column--quicklinks .hp-nav__list--level-2 .hp-nav__item:first-child span {
+  color: #fff;
+  display: flex;
+  font-family: Roboto, sans-serif;
+  font-size: 1.333333rem;
+  font-weight: bold;
+  margin-bottom: .75rem;
+}
+.hp-nav__column--quicklinks .hp-nav__item:nth-child(5):before,
+.hp-nav__column--quicklinks .hp-nav__item:nth-child(11):before {
+  background-color: #484848;
+  content: " ";
+  display: block;
+  height: 2px;
+  margin-bottom: 0.75rem;
+  margin-top: 0.75rem;
+  width: 100%;
+}
+.hp-nav__column--quicklinks .multilevel-linkul-0 li,
+.hp-nav__column--quicklinks .multilevel-linkul-0 .hp-nav__item,
+.hp-nav__column--quicklinks .hp-nav__list--level-2 li,
+.hp-nav__column--quicklinks .hp-nav__list--level-2 .hp-nav__item {
+  display: block;
+}
+/* Give buttons */
+.hp-give {}
+.hp-give--full {
+  text-align: center;
+  margin: 1rem;
+}
+.hp-give hp-give--full {
+  padding: 1rem;
+}
+.hp-give__container--text {
+  color: #fff;
+}
+.hp-give__container--button {}
+.hp-give__link {
+  background-color: #f8b300;
+  border-radius: 1rem;
+  color: #222;
+  display: inline-block !important;
+}
+.hp-give--full .hp-give__link {
+  margin-top: .5rem;
+  padding-bottom: .25rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: .25rem;
+}
+.hp-give__link:active,
+.hp-give__link:focus,
+.hp-give__link:hover {
+  background-color: #fff;
+  color: #222;
+}
+.hp-give__link i {
+  color: #9e0000;
+}
+/* nav utilities */
+.hp-nav__divider:before {
+  background-color: #484848;
+  content: " ";
+  display: none;
+  height: 40px;
+  margin-right: 0.75rem;
+  width: 1px;
+}
+@media (min-width: 655px) {
+  .hp-nav__divider:before {
+    display: block;
+  }
+}
+.hp-nav__link--outbound:after {
+  content: "\f08e" !important;
+}
+.color--gold {
+  color: #f8b300;
+}
+.hp-nav--short .hp-nav__list--level-2 .hp-nav__link::after {
+    content: "\f105";
+    font-family: "FontAwesome";
+    position: absolute;
+    right: 0.75rem;
+    color:#888;
+}
+/* this is here temporarily */
+.hp-nav__link--outbound:after {
+  content: "\f08e" !important;
+  font-size: 0.75rem;
+  right: 0.6rem !important;
+}
+.hp-nav--short .hp-nav__link--outbound:after {
+  right: 0.75rem !important;
+  top: 2px;
+}
+.cwf-nav--sub .hp-nav__link--outbound:after {
+  top: 1rem;
+}
+.cwf-nav--sub .cwf-nav__item--active .cwf-nav__link:after,
+.cwf-nav--sub .cwf-nav__link:active:after,
+.cwf-nav--sub .cwf-nav__link:focus:after,
+.cwf-nav--sub .cwf-nav__link:hover:after {
+  color: #666666;
+}
+/* .hp-nav--short .hp-nav__list--level-2 .cwf-nav__item--is-current .hp-nav__link::after {
+  color: #fff;
+} */
+@media (min-width: 1024px) {
+  .hp-nav--full .hp-nav__list--level-2 .hp-nav__item.hp-nav__link--outbound:after,
+  .hp-nav--full .multilevel-linkul-0 li.hp-nav__link--outbound:after {
+    font-family: "FontAwesome";
+    position: absolute;
+    color:#8A8A8A;
+    margin-left: 0.4rem;
+    right: unset !important;
+    top: unset !important;
+  }
+  .hp-nav--full .hp-nav__column--quicklinks .hp-nav__list--level-2 li.hp-nav__link--outbound:after {
+    color: #999999;
+  }
+}
+.hp-nav--quick .hp-nav__list--level-2 .hp-nav__link--outbound:after {
+  color:#8A8A8A;
+  font-family: "FontAwesome";
+  margin-left: 0.4rem;
+}
+/* End Nav styles */
+</style><style>
+@media (min-width: 1024px) {
+  .hp-full-width--subnav-present {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    /* subtract half the subnav width and the left/right padding from the midpoint*/
+    margin-left: calc(-50vw - 160px - 1rem);
+  }
+  .hp-full-width--subnav-hidden {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    /* add half of main's left pad to the midpoint */
+    margin-left: calc(-50vw - 0.5rem);
+    /* push content back on screen */
+    padding-left: 1rem;
+  }
+}
+</style><style>
+.cwf-header__features {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .cwf-header__features {
+    display: block;
+  }
+}
+.cwf-header__exit {
+  display: none;
+}
+.cwf-header__features--nav-modal {
+  align-items: flex-end;
+}
+@media (min-width: 1024px) {
+  .cwf-header__features--nav-modal {
+    align-items: center;
+  }
+}
+.cwf-header__features--nav-modal,
+.cwf-header__features--search-modal {
+  --cwf-header__features--modal--background-color: rgba(0, 0, 0, 0.75);
+  background-color: var(--cwf-header__features--modal--background-color);
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 100000;
+}
+@media (prefers-reduced-transparency: reduce) {
+  .cwf-header__features--nav-modal,
+  .cwf-header__features--search-modal {
+    --cwf-header__features--modal--background-color: #000;
+  }
+}
+:root[data-reduced-transparency="true"] .cwf-header__features--nav-modal,
+:root[data-reduced-transparency="true"] .cwf-header__features--search-modal {
+  --cwf-header__features--modal--background-color: #000;
+}
+@media (prefers-reduced-transparency: no-preference) {
+  .cwf-header__features--nav-modal,
+  .cwf-header__features--search-modal {
+    --cwf-header__features--modal--background-color: rgba(0, 0, 0, 0.75);
+  }
+}
+:root[data-reduced-transparency="false"] .cwf-header__features--nav-modal,
+:root[data-reduced-transparency="false"] .cwf-header__features--search-modal {
+  --cwf-header__features--modal--background-color: rgba(0, 0, 0, 0.75);
+}
+.cwf-header__features--nav-modal[aria-hidden="false"],
+.cwf-header__features--search-modal[aria-hidden="false"] {
+  -webkit-animation: fadeIn 0.1s ease-in-out;
+  animation: fadeIn 0.1s ease-in-out;
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.cwf-header__features--nav-modal[aria-hidden="true"],
+.cwf-header__features--search-modal[aria-hidden="true"] {
+  -webkit-animation: fadeOut 0.1s ease-in-out;
+  animation: fadeOut 0.1s ease-in-out;
+}
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.cwf-header__features--nav-modal .cwf-header__exit,
+.cwf-header__features--search-modal .cwf-header__exit {
+  --cwf-header__exit--background-color: #000;
+  --cwf-header__exit--color: #fff;
+  --cwf-header__exit--active--background-color: #000;
+  --cwf-header__exit--desktop--background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  background-color: var(--cwf-header__exit--background-color);
+  border: none;
+  color: var(--cwf-header__exit--color);
+  display: flex;
+  font-size: 1rem;
+  font-weight: 700;
+  height: 64px;
+  justify-content: space-evenly;
+  min-width: 128px;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: background-color 0.1s ease-in-out;
+}
+.cwf-header__features--nav-modal .cwf-header__exit:focus,
+.cwf-header__features--nav-modal .cwf-header__exit:hover,
+.cwf-header__features--search-modal .cwf-header__exit:focus,
+.cwf-header__features--search-modal .cwf-header__exit:hover {
+  background-color: var(--cwf-header__exit--active--background-color);
+}
+.cwf-header__features--nav-modal .cwf-header__exit:after,
+.cwf-header__features--search-modal .cwf-header__exit:after {
+  text-rendering: auto;
+  content: "\f00d";
+  font-family: Font Awesome\6 Free;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 900;
+  line-height: 1;
+}
+@media (min-width: 1024px) {
+  .cwf-header__features--nav-modal .cwf-header__exit,
+  .cwf-header__features--search-modal .cwf-header__exit {
+    background-color: var(--cwf-header__exit--desktop--background-color);
+  }
+}
+.cwf-header__features--search-modal {
+  align-items: flex-start;
+}
+@media (min-width: 1024px) {
+  .cwf-header__features--search-modal {
+    align-items: center;
+  }
+}
+.cwf-header__nav {
+  display: flex;
+  font-size: 0.889rem;
+  justify-content: flex-end;
+}
+.cwf-header__features--search-modal .cwf-header__nav {
+  display: none;
+}
+.cwf-header__features--nav-modal .cwf-header__nav {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  max-width: 760px;
+  width: 760px;
+}
+@media (min-width: 1024px) {
+  .cwf-header__features--nav-modal .cwf-header__nav {
+    margin-bottom: 0;
+  }
+}
+.cwf-header__features--nav-modal[aria-hidden="false"] .cwf-header__nav {
+  -webkit-animation: slideInUp 0.1s ease-in-out;
+  animation: slideInUp 0.1s ease-in-out;
+}
+@-webkit-keyframes slideInUp {
+  0% {
+    transform: translateY(15%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cwf-header__features--nav-modal[aria-hidden="false"] .cwf-header__nav {
+    -webkit-animation: slideOutDownReducedMotion 0.1s ease-in-out;
+    animation: slideOutDownReducedMotion 0.1s ease-in-out;
+  }
+}
+:root[data-reduced-motion="true"]
+  .cwf-header__features--nav-modal[aria-hidden="false"]
+  .cwf-header__nav {
+  -webkit-animation: slideOutDownReducedMotion 0.1s ease-in-out;
+  animation: slideOutDownReducedMotion 0.1s ease-in-out;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .cwf-header__features--nav-modal[aria-hidden="false"] .cwf-header__nav {
+    -webkit-animation: slideInUp 0.1s ease-in-out;
+    animation: slideInUp 0.1s ease-in-out;
+  }
+}
+:root[data-reduced-motion="false"]
+  .cwf-header__features--nav-modal[aria-hidden="false"]
+  .cwf-header__nav {
+  -webkit-animation: slideInUp 0.1s ease-in-out;
+  animation: slideInUp 0.1s ease-in-out;
+}
+.cwf-header__features--nav-modal[aria-hidden="true"] .cwf-header__nav {
+  -webkit-animation: slideOutDown 0.1s ease-in-out;
+  animation: slideOutDown 0.1s ease-in-out;
+}
+@-webkit-keyframes slideOutDown {
+  0% {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(15%);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cwf-header__features--nav-modal[aria-hidden="true"] .cwf-header__nav {
+    -webkit-animation: slideOutDownReducedMotion 0.1s ease-in-out;
+    animation: slideOutDownReducedMotion 0.1s ease-in-out;
+  }
+}
+:root[data-reduced-motion="true"]
+  .cwf-header__features--nav-modal[aria-hidden="true"]
+  .cwf-header__nav {
+  -webkit-animation: slideOutDownReducedMotion 0.1s ease-in-out;
+  animation: slideOutDownReducedMotion 0.1s ease-in-out;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .cwf-header__features--nav-modal[aria-hidden="true"] .cwf-header__nav {
+    -webkit-animation: slideOutDown 0.1s ease-in-out;
+    animation: slideOutDown 0.1s ease-in-out;
+  }
+}
+:root[data-reduced-motion="false"]
+  .cwf-header__features--nav-modal[aria-hidden="true"]
+  .cwf-header__nav {
+  -webkit-animation: slideOutDown 0.1s ease-in-out;
+  animation: slideOutDown 0.1s ease-in-out;
+}
+@-webkit-keyframes slideOutDownReducedMotion {
+  0% {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.cwf-header__nav .cwf-header__link {
+  margin-right: 0.5rem;
+  text-decoration: underline;
+}
+.cwf-header__nav .cwf-header__link:focus,
+.cwf-header__nav .cwf-header__link:hover {
+  text-decoration: none !important;
+}
+.cwf-header__nav .cwf-header__link:last-child {
+  margin-right: 0;
+}
+.cwf-header__features--nav-modal .cwf-header__link {
+  --cwf-header__features--nav-modal__link--border-color: #ccc;
+  --cwf-header__features--nav-modal__link--background-color: #fff;
+  --cwf-header__features--nav-modal__link--color: #131313;
+  --cwf-header__features--nav-modal__link--active--border-color: rgba(
+    0,
+    0,
+    0,
+    0.125
+  );
+  --cwf-header__features--nav-modal__link--active--background-color: var(
+    --cwf-accent--background,
+    var(--cwf-color--blue, #006894)
+  );
+  --cwf-header__features--nav-modal__link--active--color: var(
+    --cwf-accent--foreground,
+    var(--cwf-color--white, #fff)
+  );
+  background-color: var(
+    --cwf-header__features--nav-modal__link--background-color
+  );
+  border-bottom: 2px solid
+    var(--cwf-header__features--nav-modal__link--border-color);
+  color: var(--cwf-header__features--nav-modal__link--color);
+  display: block;
+  font-size: 1.5rem;
+  margin-right: 0;
+  max-width: 760px;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  transition: none;
+  width: 100%;
+}
+.cwf-header__features--nav-modal .cwf-header__link:focus,
+.cwf-header__features--nav-modal .cwf-header__link:hover {
+  background-color: var(
+    --cwf-header__features--nav-modal__link--active--background-color
+  );
+  border-color: var(
+    --cwf-header__features--nav-modal__link--active--border-color
+  );
+  color: var(--cwf-header__features--nav-modal__link--active--color);
+}
+.cwf-header__features--nav-modal .cwf-header__link:focus {
+  outline: none;
+}
+.cwf-header__features--nav-modal .cwf-header__link:first-of-type {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+.cwf-header__features--nav-modal .cwf-header__link:last-of-type {
+  border-bottom: none;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+@media (min-width: 1024px) {
+  .cwf-header__nav ~ .cwf-header__search {
+    margin-top: 0.5rem;
+  }
+}
+.cwf-header__search {
+  display: flex;
+  flex: 1;
+  position: relative;
+}
+.cwf-header__features--nav-modal .cwf-header__search {
+  display: none;
+}
+.cwf-header__features--search-modal .cwf-header__search {
+  display: flex;
+  flex-direction: column;
+  margin-top: calc(64px + 1rem);
+  max-width: 760px;
+  min-width: 0;
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  .cwf-header__features--search-modal .cwf-header__search {
+    margin-top: 0;
+  }
+}
+.cwf-header__features--search-modal[aria-hidden="false"] .cwf-header__search {
+  -webkit-animation: slideInUp 0.1s ease-in-out;
+  animation: slideInUp 0.1s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .cwf-header__features--search-modal[aria-hidden="false"] .cwf-header__search {
+    -webkit-animation: slideOutDownReducedMotion 0.1s ease-in-out;
+    animation: slideOutDownReducedMotion 0.1s ease-in-out;
+  }
+}
+:root[data-reduced-motion="true"]
+  .cwf-header__features--search-modal[aria-hidden="false"]
+  .cwf-header__search {
+  -webkit-animation: slideOutDownReducedMotion 0.1s ease-in-out;
+  animation: slideOutDownReducedMotion 0.1s ease-in-out;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .cwf-header__features--search-modal[aria-hidden="false"] .cwf-header__search {
+    -webkit-animation: slideInUp 0.1s ease-in-out;
+    animation: slideInUp 0.1s ease-in-out;
+  }
+}
+:root[data-reduced-motion="false"]
+  .cwf-header__features--search-modal[aria-hidden="false"]
+  .cwf-header__search {
+  -webkit-animation: slideInUp 0.1s ease-in-out;
+  animation: slideInUp 0.1s ease-in-out;
+}
+.cwf-header__features--search-modal[aria-hidden="true"] .cwf-header__search {
+  -webkit-animation: slideOutDown 0.1s ease-in-out;
+  animation: slideOutDown 0.1s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .cwf-header__features--search-modal[aria-hidden="true"] .cwf-header__search {
+    -webkit-animation: slideOutDownReducedMotion 0.1s ease-in-out;
+    animation: slideOutDownReducedMotion 0.1s ease-in-out;
+  }
+}
+:root[data-reduced-motion="true"]
+  .cwf-header__features--search-modal[aria-hidden="true"]
+  .cwf-header__search {
+  -webkit-animation: slideOutDownReducedMotion 0.1s ease-in-out;
+  animation: slideOutDownReducedMotion 0.1s ease-in-out;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .cwf-header__features--search-modal[aria-hidden="true"] .cwf-header__search {
+    -webkit-animation: slideOutDown 0.1s ease-in-out;
+    animation: slideOutDown 0.1s ease-in-out;
+  }
+}
+:root[data-reduced-motion="false"]
+  .cwf-header__features--search-modal[aria-hidden="true"]
+  .cwf-header__search {
+  -webkit-animation: slideOutDown 0.1s ease-in-out;
+  animation: slideOutDown 0.1s ease-in-out;
+}
+.cwf-header__input {
+  background-color: var(--cwf-header__input--background-color);
+  border-color: var(--cwf-header__input--border-color);
+  border-radius: 1.5rem;
+  border-style: solid;
+  border-width: 1px;
+  color: var(--cwf-header__input--color);
+  flex: 1;
+  font-size: 0.889rem;
+  padding: 0.5rem 2.25rem 0.5rem 0.75rem;
+  transition: border-color 0.1s ease-in-out, background-color 0.1s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .cwf-header__input {
+    transition: border-color 0s;
+  }
+}
+:root[data-reduced-motion="true"] .cwf-header__input {
+  transition: border-color 0s;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .cwf-header__input {
+    transition: border-color 0.1s ease-in-out, background-color 0.1s ease-in-out;
+  }
+}
+:root[data-reduced-motion="false"] .cwf-header__input {
+  transition: border-color 0.1s ease-in-out, background-color 0.1s ease-in-out;
+}
+.cwf-header__input:hover {
+  border-color: var(--cwf-header__input--hover--border-color);
+}
+.cwf-header__input:focus {
+  background-color: var(--cwf-header__input--focus--background-color);
+}
+.cwf-header__input:focus,
+.cwf-header__input:focus:hover {
+  border-color: var(--cwf-header__input--focus--border-color);
+  outline: none;
+}
+.cwf-header__features--search-modal .cwf-header__input {
+  --cwf-header__features--search-modal__input--border-color: #fff;
+  --cwf-header__features--search-modal__input--background-color: #fff;
+  --cwf-header__features--search-modal__input--color: #131313;
+  --cwf-header__features--search-modal__input--active--border-color: #131313;
+  background-color: var(
+    --cwf-header__features--search-modal__input--background-color
+  );
+  border-color: var(--cwf-header__features--search-modal__input--border-color);
+  border-radius: 3rem;
+  border-width: 2px;
+  color: var(--cwf-header__features--search-modal__input--color);
+  font-size: 1.5rem;
+  padding: 1rem 4rem 1rem 1.5rem;
+  transition: none;
+}
+.cwf-header__features--search-modal .cwf-header__input:focus,
+.cwf-header__features--search-modal .cwf-header__input:focus:hover {
+  border-color: var(
+    --cwf-header__features--search-modal__input--active--border-color
+  );
+}
+.cwf-header__submit {
+  align-items: center;
+  background-color: var(--cwf-header__input--background-color);
+  border: 1px solid var(--cwf-header__submit--border-color);
+  border-radius: 100%;
+  color: var(--cwf-header__label--color);
+  display: flex;
+  font-size: 0.6rem;
+  height: 1.5rem;
+  justify-content: center;
+  position: absolute;
+  right: 0.4rem;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: border-color 0.1s ease-in-out, background-color 0.1s ease-in-out,
+    color 0.1s ease-in-out;
+  width: 1.5rem;
+}
+@media (prefers-reduced-motion: reduce) {
+  .cwf-header__submit {
+    transition: border-color 0s;
+  }
+}
+:root[data-reduced-motion="true"] .cwf-header__submit {
+  transition: border-color 0s;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .cwf-header__submit {
+    transition: border-color 0.1s ease-in-out, background-color 0.1s ease-in-out,
+      color 0.1s ease-in-out;
+  }
+}
+:root[data-reduced-motion="false"] .cwf-header__submit {
+  transition: border-color 0.1s ease-in-out, background-color 0.1s ease-in-out,
+    color 0.1s ease-in-out;
+}
+.cwf-header__submit:hover {
+  border-color: var(--cwf-header__submit--hover--border-color);
+}
+.cwf-header__submit:focus {
+  background-color: var(--cwf-header__input--focus--background-color);
+  border-color: var(--cwf-header__submit--focus--border-color);
+  color: var(--cwf-header__input--color);
+  outline: none;
+}
+.cwf-header__features--search-modal .cwf-header__submit {
+  --cwf-header__features--search-modal__submit--border-color: #ccc;
+  --cwf-header__features--search-modal__submit--background-color: #fff;
+  --cwf-header__features--search-modal__submit--color: #757575;
+  --cwf-header__features--search-modal__submit--hover--border-color: #757575;
+  --cwf-header__features--search-modal__submit--focus--border-color: #131313;
+  --cwf-header__features--search-modal__submit--focus--color: #131313;
+  background-color: var(
+    --cwf-header__features--search-modal__submit--background-color
+  );
+  border-color: var(--cwf-header__features--search-modal__submit--border-color);
+  border-width: 2px;
+  color: var(--cwf-header__features--search-modal__submit--color);
+  font-size: 1rem;
+  height: 3rem;
+  right: 0.5rem;
+  transition: none;
+  width: 3rem;
+}
+.cwf-header__features--search-modal .cwf-header__submit:hover {
+  border-color: var(
+    --cwf-header__features--search-modal__submit--hover--border-color
+  );
+}
+.cwf-header__features--search-modal .cwf-header__submit:focus {
+  border-color: var(
+    --cwf-header__features--search-modal__submit--focus--border-color
+  );
+  color: var(--cwf-header__features--search-modal__submit--focus--color);
+}
+.cwf-header__label {
+  -webkit-animation: slideFadeIn 0.1s ease-in-out forwards;
+  animation: slideFadeIn 0.1s ease-in-out forwards;
+  color: var(--cwf-header__label--color);
+  font-size: 0.889rem;
+  left: 0.75rem;
+  position: absolute;
+  transform: translateY(-50%);
+}
+@-webkit-keyframes slideFadeIn {
+  0% {
+    opacity: 0;
+    top: 70%;
+  }
+  to {
+    opacity: 1;
+    top: 50%;
+  }
+}
+@keyframes slideFadeIn {
+  0% {
+    opacity: 0;
+    top: 70%;
+  }
+  to {
+    opacity: 1;
+    top: 50%;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cwf-header__label {
+    -webkit-animation: slideFadeInReducedMotion 0.1s ease-in-out forwards;
+    animation: slideFadeInReducedMotion 0.1s ease-in-out forwards;
+  }
+}
+:root[data-reduced-motion="true"] .cwf-header__label {
+  -webkit-animation: slideFadeInReducedMotion 0.1s ease-in-out forwards;
+  animation: slideFadeInReducedMotion 0.1s ease-in-out forwards;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .cwf-header__label {
+    -webkit-animation: slideFadeIn 0.1s ease-in-out forwards;
+    animation: slideFadeIn 0.1s ease-in-out forwards;
+  }
+}
+:root[data-reduced-motion="false"] .cwf-header__label {
+  -webkit-animation: slideFadeIn 0.1s ease-in-out forwards;
+  animation: slideFadeIn 0.1s ease-in-out forwards;
+}
+@-webkit-keyframes slideFadeInReducedMotion {
+  0% {
+    opacity: 0;
+    top: 50%;
+  }
+  to {
+    opacity: 1;
+    top: 50%;
+  }
+}
+@keyframes slideFadeInReducedMotion {
+  0% {
+    opacity: 0;
+    top: 50%;
+  }
+  to {
+    opacity: 1;
+    top: 50%;
+  }
+}
+.cwf-header__label:hover {
+  cursor: text;
+}
+.cwf-header__input:valid ~ .cwf-header__label {
+  -webkit-animation: slideFadeOut 0.1s ease-in-out forwards;
+  animation: slideFadeOut 0.1s ease-in-out forwards;
+}
+@-webkit-keyframes slideFadeOut {
+  0% {
+    opacity: 1;
+    top: 50%;
+  }
+  99% {
+    opacity: 0;
+    top: 75%;
+  }
+  to {
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    opacity: 1;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+}
+@keyframes slideFadeOut {
+  0% {
+    opacity: 1;
+    top: 50%;
+  }
+  99% {
+    opacity: 0;
+    top: 75%;
+  }
+  to {
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    opacity: 1;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cwf-header__input:valid ~ .cwf-header__label {
+    -webkit-animation: slideFadeOutReducedMotion 0.1s ease-in-out forwards;
+    animation: slideFadeOutReducedMotion 0.1s ease-in-out forwards;
+  }
+}
+:root[data-reduced-motion="true"]
+  .cwf-header__input:valid
+  ~ .cwf-header__label {
+  -webkit-animation: slideFadeOutReducedMotion 0.1s ease-in-out forwards;
+  animation: slideFadeOutReducedMotion 0.1s ease-in-out forwards;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .cwf-header__input:valid ~ .cwf-header__label {
+    -webkit-animation: slideFadeOut 0.1s ease-in-out forwards;
+    animation: slideFadeOut 0.1s ease-in-out forwards;
+  }
+}
+:root[data-reduced-motion="false"]
+  .cwf-header__input:valid
+  ~ .cwf-header__label {
+  -webkit-animation: slideFadeOut 0.1s ease-in-out forwards;
+  animation: slideFadeOut 0.1s ease-in-out forwards;
+}
+@-webkit-keyframes slideFadeOutReducedMotion {
+  0% {
+    opacity: 1;
+    top: 50%;
+  }
+  99% {
+    opacity: 0;
+  }
+  to {
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    opacity: 1;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+}
+@keyframes slideFadeOutReducedMotion {
+  0% {
+    opacity: 1;
+    top: 50%;
+  }
+  99% {
+    opacity: 0;
+  }
+  to {
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    opacity: 1;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+}
+.cwf-header__features--search-modal .cwf-header__label {
+  --cwf-header__features--search-modal__label--color: #757575;
+  color: var(--cwf-header__features--search-modal__label--color);
+  font-size: 1.5rem;
+  left: 1.5rem;
+}
+</style>
+        </aside>
+        <header class="hp-header hp-header--dark">  <div class="hp-header__container">    <div class="hp-header__controller">      <!-- logo -->      <div class="hp-header__column">        <div class="hp-header__logo-container">          <a href='/'>            <img              class="hp-header__logo"              src="/media/vcu-homepage/assets/vcu-seal--gold.svg"              alt="Virginia Commonwealth University seal"          	/>          </a>        </div>      </div>      <!-- short menu -->      <div class="hp-header__column">        <nav id="hp-nav--short" class="hp-nav hp-nav--short">          <div class="hp-nav__container">            <div class="hp-nav__controller">              <ul class="hp-nav__list hp-nav__list--level-1">
+<li class="hp-nav__item">
+<button id="hp-nav-hamburger-full-menu" class="hp-nav__hamburger">Full menu</button>
+</li><li class="hp-nav__item"><a href="/programs/">Programs</a></li><li class="hp-nav__item"><a href="/admissions/">Admissions</a></li><li class="hp-nav__item"><a href="/why-vcu/">Why VCU?</a></li></ul>            </div>          </div>        </nav>      </div>      <!-- action links -->      <div class="hp-header__column">        <nav id="hp-nav--action" class="hp-nav hp-nav--action">          <div class="hp-nav__container">            <div class="hp-nav__controller">              <ul class="hp-nav__list"><li class="hp-nav__item"><a href="https://my.vcu.edu/">myVCU</a></li></ul>            </div>          </div>        </nav>        <!-- quick links -->        <nav id="hp-nav--quick" class="hp-nav hp-nav--quick">          <div class="hp-nav__container">            <div class="hp-nav__controller">              <ul class="hp-nav__list hp-nav__list--level-1 hp-nav__divider">                <li class="hp-nav__item">                  <button                    id="hp-nav-hamburger-quick"                    aria-label="Toggle quick links menu"                    class="hp-nav__hamburger hp-nav__hamburger--quick"                  ></button>                  <ul class="hp-nav__list hp-nav__list--level-2">
+<li class="hp-nav__item">
+<span>Quick links</span>
+</li><li class="hp-nav__item"><a href="/email/">Email</a></li><li class="hp-nav__item"><a href="https://my.vcu.edu/">myVCU</a></li><li class="hp-nav__item"><a href="http://canvas.vcu.edu/">Canvas</a></li><li class="hp-nav__item"><a href="https://rar.vcu.edu/registration/dates/">Register for classes</a></li><li class="hp-nav__item"><a href="https://academiccalendars.vcu.edu/">Academic calendars</a></li><li class="hp-nav__item"><a href="https://support.vcu.edu/">Give / Donate</a></li><li class="hp-nav__item"><a href="https://maps.vcu.edu">Maps</a></li><li class="hp-nav__item"><a href="https://www.vcuhealth.org/">VCU Health</a></li><li class="hp-nav__item"><a href="https://vcu.csod.com/ux/ats/careersite/1/home?c=vcu">Jobs</a></li><li class="hp-nav__item"><a href="/faculty-and-staff/">Faculty and staff</a></li><li class="hp-nav__item"><a href="/current-students/">Current students</a></li><li class="hp-nav__item"><a href="/parents-and-families/">Parents and families</a></li><li class="hp-nav__item"><a href="https://www.vcualumni.org/">Alumni</a></li></ul>                </li>                <li class="hp-nav__item">                  <button                    aria-label="Open full menu and focus search field"                    id="hp-nav-hamburger-search-menu"                    class="hp-nav__hamburger hp-nav__hamburger--search"                  ></button>                </li>              </ul>            </div>          </div>        </nav>      </div>      <!-- full menu -->      <nav        id="hp-nav--full"        class="hp-nav hp-nav--full hp-nav--full-menu--hidden"        aria-label="Menu"      >        <button          id="hp-nav-hamburger-full-menu-close"          class="hp-nav__hamburger hp-nav__hamburger--full-menu--close"          aria-label="Close the main menu"        >          Close        </button>        <div class="hp-nav__container">          <div class="hp-nav__controller">            <div class="hp-search">              <div class="hp-search__container">                <div class="hp-search__controller">                  <!-- logo -->                  <div class="hp-search__column hp-search__column--logo">                    <div class="hp-search__logo-container">                      <a href='/' class="hp-search__logo-link"                        ><img                          class="hp-search__logo"                          src="https://branding.vcu.edu/bar/academic/images/vcu-seal--gold.svg"                          alt="Virginia Commonwealth University seal"                      /></a>                    </div>                  </div>                  <div class="hp-search__column hp-search__column--form">                    <form                      id="hp-nav__search"                      class="cwf-header__search hp-nav__search"                      action="https://search.vcu.edu/s/search.html"                    >                      <input type="hidden" name="collection" value="vcu-meta" />                      <input                        type="text"                        name="query"                        id="query"                        class="cwf-header__input"                        required=""                      />                      <button                        type="submit"                        class="cwf-header__submit"                        aria-label="Submit"                      >                        <i class="fas fa-search"></i>                      </button>                      <label for="query" class="cwf-header__label"                        >Search VCU people and web</label                      >                    </form>                  </div>                </div>              </div>            </div>            <div class="hp-nav__column-controller">              <div class="hp-nav__column hp-nav__column--menu">                <ul class="hp-nav__list hp-nav__list--level-1"><li class="hp-nav__item"><a href="/programs/">Programs</a>
+<ul class="multilevel-linkul-0">
+<li><a href="/programs/undergraduate/">Undergraduate</a></li>
+<li><a href="/programs/graduate/">Graduate</a></li>
+<li><a href="/programs/colleges-and-schools/">Colleges and schools</a></li>
+<li><a href="https://online.vcu.edu/">Online learning</a></li>
+<li><a href="https://ocpe.vcu.edu/">Continuing education</a></li>
+</ul>
+</li><li class="hp-nav__item"><a href="/admissions/">Admissions</a>
+<ul class="multilevel-linkul-0">
+<li><a href="https://admissions.vcu.edu/apply-to-vcu/">Apply</a></li>
+<li><a href="https://admissions.vcu.edu/connect/visit/">Visit</a></li>
+<li><a href="https://admissions.vcu.edu/cost-aid/tuition-fees/">Tuition</a></li>
+<li><a href="https://admissions.vcu.edu/cost-aid/scholarships-funding/">Scholarships and aid</a></li>
+</ul>
+</li><li class="hp-nav__item"><a href="/why-vcu/">Why VCU?</a>
+<ul class="multilevel-linkul-0">
+<li><a href="https://vcu.edu/why-vcu/#Chapter---Learning">Learning without limits</a></li>
+<li><a href="https://vcu.edu/why-vcu/#Chapter---Place">A place for everyone</a></li>
+<li><a href="https://vcu.edu/why-vcu/#Chapter---Richmond">In the heart of Richmond</a></li>
+<li><a href="https://vcu.edu/why-vcu/#Chapter---Support">Support at every turn</a></li>
+<li><a href="https://vcu.edu/why-vcu/#Chapter---Career">Career-ready grads</a></li>
+</ul>
+</li><li class="hp-nav__item"><a href="/campus-life/">Campus life</a>
+<ul class="multilevel-linkul-0">
+<li><a href="/campus-life/housing-and-dining/">Housing and dining</a></li>
+<li><a href="/campus-life/get-involved/">Get involved</a></li>
+<li><a href="/campus-life/around-campus/">Around campus</a></li>
+<li><a href="/campus-life/safety-and-wellness/">Safety and wellness</a></li>
+<li><a href="/campus-life/athletics/">Athletics</a></li>
+<li><a href="/campus-life/arts-and-culture/">Arts and culture</a></li>
+</ul>
+</li><li class="hp-nav__item"><a href="/research/">Research</a>
+<ul class="multilevel-linkul-0">
+<li><a href="https://research.vcu.edu/">Research office</a></li>
+<li><a href="https://academics.provost.vcu.edu/transformative-learning/undergraduate-research/">Undergraduate research</a></li>
+<li><a href="https://research.vcu.edu/resources/">Resources</a></li>
+<li><a href="https://www.library.vcu.edu/">Libraries</a></li>
+</ul>
+</li><li class="hp-nav__item"><a href="/about-vcu/">About</a>
+<ul class="multilevel-linkul-0">
+<li><a href="/about-vcu/facts-and-rankings/">Facts and rankings</a></li>
+<li><a href="/about-vcu/mission-and-history/">Mission and history</a></li>
+<li><a href="https://president.vcu.edu/cabinet/">Leadership</a></li>
+</ul>
+</li></ul><div class="hp-give hp-give--full">
+                      <div class="hp-give__container--text">See how support for VCU is making a difference</div>
+                      <div class="hp-give__container--button">
+                        <a href="https://support.vcu.edu" class="hp-give__link">Give <i class="fas fa-heart"></i></a>
+                      </div>
+                    </div>              </div>              <div class="hp-nav__column hp-nav__column--quicklinks">                <ul class="hp-nav__list hp-nav__list--level-2">
+<li class="hp-nav__item">
+<span>Quick links</span>
+</li><li class="hp-nav__item"><a href="/email/">Email</a></li><li class="hp-nav__item"><a href="https://my.vcu.edu/">myVCU</a></li><li class="hp-nav__item"><a href="http://canvas.vcu.edu/">Canvas</a></li><li class="hp-nav__item"><a href="https://rar.vcu.edu/registration/dates/">Register for classes</a></li><li class="hp-nav__item"><a href="https://academiccalendars.vcu.edu/">Academic calendars</a></li><li class="hp-nav__item"><a href="https://support.vcu.edu/">Give / Donate</a></li><li class="hp-nav__item"><a href="https://maps.vcu.edu">Maps</a></li><li class="hp-nav__item"><a href="https://www.vcuhealth.org/">VCU Health</a></li><li class="hp-nav__item"><a href="https://vcu.csod.com/ux/ats/careersite/1/home?c=vcu">Jobs</a></li><li class="hp-nav__item"><a href="/faculty-and-staff/">Faculty and staff</a></li><li class="hp-nav__item"><a href="/current-students/">Current students</a></li><li class="hp-nav__item"><a href="/parents-and-families/">Parents and families</a></li><li class="hp-nav__item"><a href="https://www.vcualumni.org/">Alumni</a></li></ul>              </div>            </div>          </div>        </div>      </nav>    </div>  </div></header>
+        <!-- Content -->
+        <div class="cwf-grid cwf-grid--page-layout">
+            <main id="cwf-content" class="cwf-grid__column--page-layout cwf-grid__column--page-layout--main">
+                <nav aria-label="Breadcrumb" class="cwf-breadcrumb">
+            <ol class="cwf-breadcrumb__list">
+            <li class="cwf-breadcrumb__item">
+            <a href="/" class="cwf-breadcrumb__link" title="Virginia Commonwealth University">
+            <i class="fas fa-home cwf-breadcrumb__icon"></i>
+        <span class="cwf-breadcrumb__text">Home</span>
+        </a>
+        </li><li class="cwf-breadcrumb__item">
+            404
+        </li>
+        </ol>
+        </nav><div id="d.en.592948" class="plugin-general-content">
+            <h1>Uh oh! The page you&rsquo;re looking for is nowhere to be found.</h1>
+<p>First, double check the URL. If you continue to reach this page,&nbsp;<a href="https://go.vcu.edu/itsupport">please contact the Webmaster</a>&nbsp;so we can correct our mistake.</p>
+<p>Now, let&rsquo;s help you find your way. To help locate your document you might try:</p>
+<ul>
+<li><a href="https://atoz.vcu.edu/">VCU A to Z index</a>, an alphabetical list of VCU websites</li>
+<li><a href="https://www.vcu.edu/">VCU home page</a>, which has links to our most popular content</li>
+<li>Or simply use the search field at the top of the page</li>
+</ul>
+        </div></main>
+        </div>
+        <aside class="cwf-area cwf-area--full-width cwf-area--footer">
+            <style>
+.cwf-footer .hp-nav__link--outbound {
+  position: relative;
+}
+.cwf-footer .hp-nav__link--outbound:after {
+    font-family: "FontAwesome";
+    position: absolute;
+    right: unset !important;
+    margin-left: 0.3rem;
+    color: #888;
+    top: 0;
+}
+.cwf-footer p.hp-nav__link--outbound:after {
+  top: 0.4rem;
+}
+</style>
+        </aside>
+        <footer id="cwf-footer--hp" class="cwf-footer cwf-footer--dark">  <div class="cwf-footer__container">    <div class="cwf-footer__controller">      <div class="cwf-footer__column cwf-footer__column--left">        <div class="cwf-footer__item">          <a class="cwf-footer__link cwf-footer__link--seal" href="/" title="Virginia Commonwealth University seal" aria-label="Visit vcu.edu through the University seal">            <span class="cwf-footer__seal">            	<picture>                  <source srcset="/media/vcu-homepage/assets/vcu-seal.svg" media="(min-width: 1024px)" />                  <img src="/media/vcu-homepage/assets/vcu-simple-seal.svg" alt="VCU logo - simple seal" style="width:-1px; height:auto;    " />				</picture>            </span>          </a>        </div>        <div class="cwf-footer__item">          <a class="cwf-footer__link cwf-footer__link--university" href="/" title="Virginia Commonwealth University" aria-label="Virginia Commonwealth University main website">Virginia Commonwealth University</a>        </div>        <div class="cwf-footer__item cwf-footer__item--address">          <address class="cwf-footer__address">Richmond, VA 23284 </address>        </div>        <div class="cwf-footer__item cwf-footer__item--wysiwyg">          <div><a class="cwf-footer__link" href="tel:(804)828-1463">(804) 828-1463</a></div>        </div>        <div class="cwf-footer__item cwf-footer__item--wysiwyg">          <div><a class="cwf-footer__link" href='/contacts/' title="Contact us by email">Contacts</a></div>        </div>        <div class="cwf-footer__item">            <div class="cwf-footer__item cwf-footer__item--social-list">              <!-- Social Media links -->              <div class="cwf-footer__social-item">                <a class="cwf-footer__link cwf-footer__link--social" href="https://instagram.com/vcu" title="VCU Instagram">                  <i class="fab fa-instagram">                    <span class="sr-only">VCU Instagram</span>                  </i>                </a>              </div>              <div class="cwf-footer__social-item">                <a class="cwf-footer__link cwf-footer__link--social" href="https://www.youtube.com/c/virginiacommonwealthuniversity" title="VCU YouTube">                  <i class="fab fa-youtube">                    <span class="sr-only">VCU YouTube</span>                  </i>                </a>              </div>              <!-- Old Twitter <div class="cwf-footer__social-item">                <a class="cwf-footer__link cwf-footer__link--social" href="https://twitter.com/VCU" title="VCU Twitter">                  <i class="fab fa-twitter">                    <span class="sr-only">VCU Twitter</span>                  </i>                </a>              </div>-->              <div class="cwf-footer__social-item">                <a class="cwf-footer__link cwf-footer__link--social hp-social-link" href="https://twitter.com/VCU" title="VCU Twitter">                  <i class="hp-social-link--container"><svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="enable-background:new 0 0 200 200" viewBox="0 0 200 200"><path d="M119 84.7 193.4 0h-17.6l-64.6 73.5L59.5 0H0l78 111.2L0 200h17.6l68.2-77.7 54.5 77.7h59.5L119 84.7zm-24.2 27.5-7.9-11.1L24 13h27.1l50.8 71.1 7.9 11.1 66 92.4h-27.1l-53.9-75.4z" style="fill:#fff"/></svg>                    <span class="sr-only">VCU Twitter</span>                  </i>                    <span class="sr-only">VCU X</span>                  </i>                </a>              </div>              <div class="cwf-footer__social-item">                <a class="cwf-footer__link cwf-footer__link--social" href="https://www.linkedin.com/school/virginia-commonwealth-university/" title="VCU LinkedIn">                  <i class="fab fa-linkedin">                    <span class="sr-only">VCU LinkedIn</span>                  </i>                </a>              </div>              <div class="cwf-footer__social-item">                <a class="cwf-footer__link cwf-footer__link--social" href="https://facebook.com/virginiacommonwealthuniversity" title="VCU Facebook">                  <i class="fab fa-facebook-f">                    <span class="sr-only">VCU Facebook</span>                  </i>                </a>              </div>            </div><!-- END social links list -->        </div>      </div>      <!-- END left column -->      <div class="cwf-footer__column cwf-footer__column--middle">        <div class="cwf-footer__item cwf-footer__item--wysiwyg hp-footer-list__container">            <div class="hp-footer-list">              <h2>Explore</h2>
+<ul>
+<li><a href="/programs/">Programs</a></li>
+<li><a href="/admissions/">Admissions</a></li>
+<li><a href="/campus-life/">Campus life</a></li>
+<li><a href="/research/">Research</a></li>
+<li><a href="/about-vcu/">About</a></li>
+<li><a href="/why-vcu/">Why VCU?</a></li>
+</ul>            </div>            <div class="hp-footer-list">              <h2>Resources</h2>
+<ul>
+<li><a href="https://www.vcuhealth.org/">VCU Health</a></li>
+<li><a href="https://www.library.vcu.edu/">VCU Libraries</a></li>
+<li><a href="/campus-life/safety-and-wellness/">Campus safety</a></li>
+<li><a href="https://equity.vcu.edu/">Equity and Access Services</a></li>
+<li><a href="https://alert.vcu.edu/">Emergency alerts</a></li>
+<li><a href="https://vcu.csod.com/ux/ats/careersite/1/home?c=vcu">Jobs</a></li>
+</ul>              <div class="hp-give hp-give--full">                <div class="hp-give__container--button">                  <a class="hp-give__link" href="https://support.vcu.edu/?utm_source=footer-give&utm_medium=branding&utm_campaign=brandbar-vcuhpbeta&utm_content=wwwvcuedu">                    Give <i class="fas fa-heart"></i>                  </a>                </div>              </div>            </div>        </div>        <!-- END middle wysiwyg -->      </div>      <!-- END middle column -->      <!-- Right column -->      <div class="cwf-footer__column cwf-footer__column--right">        <div class="hp-footer__map cwf-footer__item--wysiwyg">            <!-- Add image and link for location -->            <div class="hp-footer__map--image">                <img src="/media/vcu-homepage/assets/images/hp-virginia.svg" alt="Simplified Virginia map showing RIchmond's location" style="width:-1px; height:auto;    " />            </div><!-- END map image -->            <p><i class="fa fa-map-marker-alt"></i><a href="https://maps.vcu.edu/" class="cwf-footer__link">Maps and directions</a></p>        </div><!-- END .hp-footer__map" -->      </div>      <!-- END right column -->      <!-- Footer utility links -->        <div class="cwf-footer__standards cwf-footer__item--wysiwyg">            <h2 class="cwf-footer__standards-title">Site links</h2>            <div class="cwf-footer__item cwf-footer__item--standards cwf-footer__standards--prepend cwf-footer__item--wysiwyg"><a class="cwf-footer__link cwf-footer__link--standards" title="Student consumer information" href="https://irds.vcu.edu/consumer-information/" target="_blank" rel="noopener noreferrer">Student consumer information</a>            </div>                <div class="cwf-footer__item cwf-footer__item--standards cwf-footer__standards--prepend"><a class="cwf-footer__link cwf-footer__link--standards" title="VCU nondiscrimination notice" href="https://vcu.public.doctract.com/doctract/documentportal/08DA32A740D33543CBC5EBF25ED5AF9D" target="_blank" rel="noopener noreferrer">Nondiscrimination notice</a>            </div>                <div class="cwf-footer__item cwf-footer__item--standards">                <a class="cwf-footer__link cwf-footer__link--standards" href="/privacy-statement/" title="VCU privacy statement" rel="noreferrer">Privacy</a>            </div><div class="cwf-footer__item cwf-footer__item--standards">                <a class="cwf-footer__link cwf-footer__link--standards" href="https://accessibility.vcu.edu/" title="Accessibility at VCU" target="_blank" rel="noreferrer">Accessibility</a>            </div><div class="cwf-footer__item cwf-footer__item--standards">                <a class="cwf-footer__link cwf-footer__link--standards" href="https://marcom.vcu.edu/requests/foia/" title="Accessibility at VCU" target="_blank" rel="noreferrer">FOIA</a>            </div><div class="cwf-footer__item cwf-footer__item--standards">                <span id="hp-updated-text" class="cwf-footer__link--standards">Updated</span>: 05/23/2023</div>            </div>        </div>      <!-- END footer utility links -->    </div>  </div></footer>
+        <!-- Compass - Page Layout JS -->
+    <script src="/media/compass/page-layout/cwf.page-layout.js"></script><script>
+// site JS debug status
+const hpDebug = false;
+// helper class to control console logging
+class Logger {
+    constructor() {
+        const urlParams = new URLSearchParams(window.location.search);
+        this.enabled = ((typeof hpDebug === 'undefined') ? false : hpDebug) || 
+            (urlParams.get('debug') === 'true');
+    }
+    log(...objs) {
+        if (this.enabled && console) {
+            console.log(...objs);
+        }
+    }//log
+    error(...objs) {
+        if (this.enabled && console) {
+            console.error(...objs);
+        }
+    }
+}//class
+</script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NS6JQC3G');</script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TZGRSW');</script><script>
+/*
+	ClickCards
+	Make the entire plugin-card clickable, linking to the first link contained 
+	within the card. If no link exists, the click event is not applied. 
+*/
+class ClickCards {
+	static defaults = {
+		selector: '.plugin-card'
+	};
+	constructor(options) {
+		this.options = { ...this.constructor.defaults, ...options };
+		this.init();
+	}//constructor
+	init() {
+		const _this = this;
+		let cards = document.querySelectorAll(_this.options.selector);
+		if (cards) {
+			cards.forEach((card, index) => {
+				const id = `pCard${index}`;
+				const link = card.querySelector('a');
+				if (link) {
+					card.addEventListener('click', function() {
+						location = link.href;
+					});
+					card.addEventListener('keydown', evt => {
+						if (evt.key == 'Enter') {
+							location = evt.target.dataset.href;
+						}
+					});
+					card.style.cursor = 'pointer';
+					card.tabIndex = 0;
+					card.setAttribute('role', 'link');
+					card.dataset.href = link.href;
+					//card.setAttribute('aria-labelledby', `#${id}`);
+					link.tabIndex = -1;
+					link.id = id;
+				}
+			});
+		}
+	}
+	static initCards(options) {
+		return new ClickCards(options);
+	}
+}//class 
+//window.addEventListener('load', function() {
+//    ClickCards.initCards({selector: '.hp-card--click-cards .plugin-card'});
+//});
+window.addEventListener('load', function() {
+    function loadClickCards(selector) {
+        if (document.querySelector(selector)) {
+            ClickCards.initCards({ selector: selector });
+        }
+    }
+    loadClickCards('.hp-card--click-cards .plugin-card');
+    loadClickCards('.hp-click .plugin-card');
+    loadClickCards('.hp-card-reveal .plugin-card');
+});
+</script><script>
+const shortNavHoverMode = 1;
+class navFullMenu {
+  constructor({ prefix = "hp", animations = 1 } = {}) {
+    const _this = this;
+    this.properties = {
+      prefix,
+      animations,
+    };
+    this.logger = new Logger();
+    // this.logger.log(this.properties.prefix);
+    this.toggleFullMenu = document.getElementById("hp-nav-hamburger-full-menu");
+    this.toggleFullMenuClose = document.getElementById(
+      "hp-nav-hamburger-full-menu-close"
+    );
+    this.toggleQuickMenu = document.getElementById("hp-nav-hamburger-quick");
+    this.logger.log(this.toggleQuickMenu);
+    this.toggleSearchMenu = document.getElementById(
+      "hp-nav-hamburger-search-menu"
+    );
+    this.toggleSearchMenuClose = document.getElementById(
+      "hp-nav-hamburger-search-menu-close"
+    );
+    this.navFullMenu = document.getElementById("hp-nav--full");
+    this.navSearchInput = document.getElementById("query");
+    this.navSearchMenu = document.getElementById("hp-nav--search");
+    this.navShortMenu = document.getElementById("hp-nav--short");
+    this.navActionMenu = document.getElementById("hp-nav--action");
+    this.navQuickMenu = document.getElementById("hp-nav--quick");
+    this.visible = 0;
+    // find all links/buttons in the full menu
+    this.navFullMenuLinks = this.navFullMenu.querySelectorAll("a, button");
+    // create varialbe to hold event handlers so it can be registered and un-registered
+    this.handlers = {};
+    // trapFocus - keep focus on the full menu as users tab through
+    // the links.
+    this.handlers.trapFocus = function (evt) {
+      _this.logger.log("[Full nav]  trapFocus", evt);
+      if (evt.key == "Tab") {
+        if (_this.navFullMenuLinks) {
+          _this.logger.log("[Full nav] links", _this.navFullMenuLinks);
+          if (evt.shiftKey) {
+            if (evt.target == _this.navFullMenuLinks[0]) {
+              evt.preventDefault();
+              _this.navFullMenuLinks[_this.navFullMenuLinks.length - 1].focus();
+            }
+          } else {
+            if (
+              evt.target ==
+              _this.navFullMenuLinks[_this.navFullMenuLinks.length - 1]
+            ) {
+              evt.preventDefault();
+              _this.navFullMenuLinks[0].focus();
+            }
+          }
+        }
+      }
+    };
+    this.handlers.externalClick = function (evt) {
+      if (!_this.isDescendent(evt.target, _this.navShortMenu)) {
+        _this.closeActiveShortMenu();
+      }
+    };
+    // We'll update this keyboard navigation
+    document.body.addEventListener("keydown", (event) => {
+      // _this.logger.log("keydown");
+      if (event.isComposing || event.keyCode === 229) {
+        return;
+      }
+      if (this.visible && event.code === "Escape") {
+        _this.hideFullMenu();
+      }
+    });
+    this.toggleFullMenu.addEventListener("click", (event) => {
+      if (!this.visible) {
+        _this.showFullMenu();
+      } else {
+        _this.hideFullMenu();
+      }
+    });
+    this.toggleFullMenuClose.addEventListener("click", (event) => {
+      if (this.visible) {
+        _this.hideFullMenu();
+      }
+    });
+    // ACTION MENU
+    _this.navActionMenu.addEventListener("keyup", function (evt) {
+      if (evt.key == "Tab") {
+        _this.closeActiveShortMenu();
+      }
+    });
+    // Quicklinks menu
+    // check for existence since we may or may not have it
+    // since quick menu also has search icon, we need to
+    // go and get the actual quicklinks section that's
+    // inside of the quick menu
+    if (
+      this.toggleQuickMenu &&
+      this.toggleQuickMenu?.nextElementSibling.tagName === "UL"
+    ) {
+      _this.logger.log("inside quick toggle");
+      let quicklinksList = this.toggleQuickMenu.nextElementSibling;
+      this.toggleQuickMenu.addEventListener("click", (event) => {
+        if (!this.visible) {
+          quicklinksList.classList.remove(
+            "hp-nav--quicklinks--hidden",
+            "animating"
+          );
+          quicklinksList.classList.add("hp-nav--quicklinks--visible");
+          if (this.properties.animations) {
+            animationStart(quicklinksList);
+          }
+          this.visible = 1;
+          // document.body.style.overflowY = "hidden";
+        } else {
+          quicklinksList.classList.remove(
+            "hp-nav--quicklinks--visible",
+            "animating"
+          );
+          quicklinksList.classList.add("hp-nav--quicklinks--hidden");
+          if (this.properties.animations) {
+            animationStart(quicklinksList);
+          }
+          this.visible = 0;
+          // document.body.style.overflowY = "auto";
+        }
+      });
+    }
+    // Search menu begin (open full menu)
+    this.toggleSearchMenu.addEventListener("click", (event) => {
+      if (!this.visible) {
+        _this.showFullMenu();
+        this.navSearchInput.focus();
+        _this.fullMenuSrc = event.target;
+      } else {
+        _this.hideFullMenu();
+      }
+    });
+    // Search menu end (open full menu)
+    // Search menu begin (in its own modal)
+    // this.toggleSearchMenu.addEventListener("click", (event) => {
+    //   if (!this.visible) {
+    //     this.navSearchMenu.classList.remove(
+    //       "hp-nav--search-menu--hidden",
+    //       "animating"
+    //     );
+    //     this.navSearchMenu.classList.add("hp-nav--search-menu--visible");
+    //     if (this.properties.animations) {
+    //       animationStart(this.navSearchMenu);
+    //     }
+    //     this.visible = 1;
+    //     // document.body.style.overflowY = "hidden";
+    //   } else {
+    //     this.navSearchMenu.classList.remove(
+    //       "hp-nav--search-menu--visible",
+    //       "animating"
+    //     );
+    //     this.navSearchMenu.classList.add("hp-nav--search-menu--hidden");
+    //     if (this.properties.animations) {
+    //       animationStart(this.navSearchMenu);
+    //     }
+    //     this.visible = 0;
+    //     // document.body.style.overflowY = "auto";
+    //   }
+    // });
+    // this.toggleSearchMenuClose.addEventListener("click", (event) => {
+    //   if (!this.visible) {
+    //     this.navSearchMenu.classList.remove("hp-nav--search-menu--hidden");
+    //     this.navSearchMenu.classList.add("hp-nav--search-menu--visible");
+    //     this.visible = 1;
+    //     // document.body.style.overflowY = "hidden";
+    //   } else {
+    //     this.navSearchMenu.classList.remove(
+    //       "hp-nav--search-menu--visible",
+    //       "animating"
+    //     );
+    //     this.navSearchMenu.classList.add("hp-nav--search-menu--hidden");
+    //     if (this.properties.animations) {
+    //       animationStart(this.navSearchMenu);
+    //     }
+    //     this.visible = 0;
+    //     // document.body.style.overflowY = "auto";
+    //   }
+    // });
+    // Search menu end (in its own modal)
+    // make this more specific if necessary
+    const navList = this.navFullMenu.querySelector(".hp-nav__list--level-1");
+    const navListResult = [];
+    // _this.logger.log(navList);
+    for (const parentItem of navList.children) {
+      const parentTitle = parentItem.querySelector("a")?.textContent.trim();
+      const childrenList = parentItem.querySelector("ul");
+      const parentUrl = parentItem.querySelector("a")?.href.trim();
+      // _this.logger.log(parentTitle);
+      // _this.logger.log(parentUrl);
+      // _this.logger.log(childrenList);
+      if (childrenList) {
+        const children = [];
+        for (const childItem of childrenList.children) {
+          const childTitle = childItem.querySelector("a")?.textContent.trim();
+          const childUrl = childItem.querySelector("a")?.href.trim();
+          // _this.logger.log(childTitle);
+          // _this.logger.log(childUrl);
+          children.push({ title: childTitle, url: childUrl });
+        }
+        navListResult.push({ title: parentTitle, url: parentUrl, children });
+      } else {
+        navListResult.push({ title: parentTitle, url: parentUrl });
+      }
+    }
+    this.json = navListResult;
+    this.addChildrenToShortNav();
+    // Short menu
+    // event listener to set active item
+    /* this block can be removed if the focus/blue event handlers works
+    _this.navShortMenu.addEventListener('focus', evt => {
+      if (evt.key == 'Tab') {
+        _this.setActiveShortMenuItem(evt.target);
+      }
+    });
+    */
+    _this.shortMenuHoverOverride = false;
+    _this.shortMenuFocusLink = null;
+    const shortMenuLinks = _this.navShortMenu.querySelectorAll("a");
+    if (shortMenuLinks) {
+      _this.toHideActiveShortMenu = null;
+      shortMenuLinks.forEach((link) => {
+        link.addEventListener("focus", (evt) => {
+          if (!_this.shortMenuHoverOverride) {
+            _this.logger.log("short menu item - focus", evt);
+            if (_this.toHideActiveShortMenu) {
+              clearTimeout(_this.toHideActiveShortMenu);
+            }
+            _this.setActiveShortMenuItem(evt.target);
+          }
+        });
+        link.addEventListener("blur", (evt) => {
+          if (!_this.shortMenuHoverOverride) {
+            _this.logger.log("short menu item - blur", evt);
+            _this.toHideActiveShortMenu = setTimeout(function () {
+              _this.closeActiveShortMenu();
+            }, 200);
+          }
+        });
+      });
+    }
+    // short menu - pointer hover temporarily override keyboard focus
+    _this.navShortMenu.addEventListener("pointerenter", function (evt) {
+      _this.logger.log("[navFullMenu] short menu pointer enter", evt);
+      if (_this.isDescendent(document.activeElement, _this.navShortMenu)) {
+        _this.shortMenuFocusLink = document.activeElement;
+        _this.shortMenuHoverOverride = true;
+        _this.closeActiveShortMenu();
+      }
+    });
+    _this.navShortMenu.addEventListener("pointerleave", function (evt) {
+      _this.logger.log("[navFullMenu] short menu pointer leave", evt);
+      _this.shortMenuHoverOverride = false;
+      if (_this.shortMenuFocusLink) {
+        _this.setActiveShortMenuItem(_this.shortMenuFocusLink);
+//
+//
+// @CHIA commenting out this next .focus() "fixes" the menu-not-opening problem,
+// but probably breaks what's supposed to happen here
+//
+//
+        _this.shortMenuFocusLink.focus();
+        _this.shortMenuFocusLink = null;
+      }
+    });
+  }
+  // json() {
+  //   return this.json;
+  // }
+  addChildrenToShortNav() {
+    const _this = this;
+    this.getShortNavItems();
+    const shortNavWithChildren = this.getShortNavWithChildren();
+    const shortNavList = this.navShortMenu?.querySelector("ul");
+    // _this.logger.log(shortNavWithChildren);
+    // _this.logger.log(shortNavList);
+    if (shortNavList.children.length > 1 && shortNavHoverMode) {
+      Array.from(shortNavList.children).forEach((item, index) => {
+        if (index) {
+          let childHtml = `<ul class="hp-nav__list hp-nav__list--level-2">
+            <li class="hp-nav__item">
+              <a class="hp-nav__link" href="${
+                shortNavWithChildren[index - 1].url
+              }" tabindex="0">${shortNavWithChildren[index - 1].title}</a>
+            </li>`;
+          // _this.logger.log(index, item);
+          const children = shortNavWithChildren[index - 1].children;
+          // _this.logger.log(shortNavWithChildren[index - 1]);
+          // _this.logger.log(children);
+          if (children) {
+            Array.from(children).forEach((child, index2) => {
+              childHtml += `<li class="hp-nav__item">
+                <a class="hp-nav__link" href="${child.url}" tabindex="0">${child.title}</a>
+              </li>`;
+            });
+            childHtml += "</ul>";
+            item.insertAdjacentHTML("beforeend", childHtml);
+          }
+        }
+      });
+    }
+    // return this.getShortNavWithChildren();
+  }
+  getShortNavWithChildren() {
+    const shortNavItems = this.json.filter((item1) =>
+      this.getShortNavItems().some((item2) => item1.title === item2.title)
+    );
+    return shortNavItems;
+  }
+  getShortNavItems() {
+    const shortNavList = this.navShortMenu?.querySelector("ul");
+    const shortNavResult = [];
+    if (shortNavList.children.length > 1) {
+      Array.from(shortNavList.children).forEach((item, index) => {
+        const title = item.querySelector("a")?.textContent.trim();
+        const url = item.querySelector("a")?.href.trim();
+        // full menu hamburger is in the t4 link menu, skip it
+        if (index) {
+          shortNavResult.push({ title: title, url: url });
+        }
+      });
+    }
+    return shortNavResult;
+  }
+  showFullMenu() {
+    const _this = this;
+    this.navFullMenu.classList.remove("hp-nav--full-menu--hidden", "animating");
+    this.navFullMenu.classList.add("hp-nav--full-menu--visible");
+    if (this.properties.animations) {
+      animationStart(this.navFullMenu);
+    }
+    this.visible = 1;
+    // document.body.style.overflowY = "hidden";
+    document.body.classList.add("hp-nav--show-full-menu");
+    // set focus on the first link in the full menu
+    const firstLink = this.navFullMenu.querySelector("a, button");
+    if (firstLink) {
+      firstLink.focus();
+    }
+    // register event handler to trap focus
+    this.navFullMenu.addEventListener("keydown", _this.handlers.trapFocus);
+  } //showFullMenu
+  hideFullMenu() {
+    const _this = this;
+    this.navFullMenu.classList.remove(
+      "hp-nav--full-menu--visible",
+      "animating"
+    );
+    this.navFullMenu.classList.add("hp-nav--full-menu--hidden");
+    if (this.properties.animations) {
+      animationStart(this.navFullMenu);
+    }
+    this.visible = 0;
+    // document.body.style.overflowY = "auto";
+    // _this.logger.log("escape while full menu is open");
+    document.body.classList.remove("hp-nav--show-full-menu");
+    // return focus back to the full menu toggle
+    if (this.fullMenuSrc) {
+      this.fullMenuSrc.focus();
+      delete this.fullMenuSrc;
+    } else {
+      this.toggleFullMenu.focus();
+    }
+    // unregister event handler to trap focus
+    this.navFullMenu.removeEventListener("keydown", _this.handlers.trapFocus);
+  } //hideFullMenu
+  setActiveShortMenuItem(elem) {
+    const _this = this;
+    _this.logger.log("[navFullMenu] setActiveShortMenuItem - elem", elem);
+    // get top level short menu links
+    const items = _this.navShortMenu.querySelectorAll(
+      ".hp-nav__list--level-1 > .hp-nav__item > a"
+    );
+    if (items) {
+      _this.logger.log("[navFullMenu] setActiveShortMenuItem - items", items);
+      let hasActive = false;
+      items.forEach((item, index) => {
+        const isDescendent = _this.isDescendent(elem, item.parentElement);
+        _this.logger.log("[navFullMenu] isDescendent", isDescendent);
+        if (item == elem || isDescendent) {
+          item.parentElement.classList.add("hp-nav__item--active");
+          hasActive = true;
+        } else {
+          item.parentElement.classList.remove("hp-nav__item--active");
+        }
+      });
+      if (hasActive) {
+        //document.addEventListener('click', _this.handlers.externalClick);
+      }
+    }
+  } //setActiveShortMenuItem
+  closeActiveShortMenu() {
+    const activeItem = this.navShortMenu.querySelector(".hp-nav__item--active");
+    if (activeItem) {
+      activeItem.classList.remove("hp-nav__item--active");
+      //document.removeEventListener('click', this.handlers.externalClick);
+    }
+  } //closeActiveShortMenuItem
+  isDescendent(elem, parent) {
+    while (elem) {
+      if (elem === parent) {
+        return true;
+      }
+      elem = elem.parentElement;
+    }
+    return false;
+  } //isDescendent
+} //class
+const nav = new navFullMenu();
+// console.log(nav);
+// nav.addChildrenToShortNav(); //movied into the class
+// console.log(nav.json);
+// console.log(nav.getShortNavItems());
+// console.log(nav.addChildrenToShortNav());
+// function animationStart(el) {
+//   el.classList.remove("animating");
+//   let elClassList = el.classList.toString();
+//   console.log(elClassList);
+//   // el.className = elClassList;
+//   requestAnimationFrame((time) => {
+//     requestAnimationFrame((time) => {
+//       el.className = elClassList + " animating";
+//     });
+//   });
+// }
+function animationStart(el) {
+  let elClassList = el.classList.toString();
+  // console.log(elClassList);
+  requestAnimationFrame((time) => {
+    el.className = elClassList + " animating";
+  });
+}
+//\\
+// Find the top level links that have dropdowns and
+// add a toggle to display its children
+let level2List = document.querySelectorAll(
+  ".hp-nav--full .hp-nav__column--menu .multilevel-linkul-0"
+);
+if (!level2List.length) {
+  level2List = document.querySelectorAll(
+    ".hp-nav--full .hp-nav__column--menu .hp-nav__list--level-2"
+  );
+}
+if (level2List && level2List.length) {
+  Array.from(level2List).forEach((item, index) => {
+    // Add toggle to all lists except Quicklinks (last in the list)
+    let linkBeforeListItem = item.previousElementSibling;
+    item.insertAdjacentHTML(
+      "beforebegin",
+      `<button class="hp-nav__toggle" aria-label="${linkBeforeListItem.innerText} dropdown" aria-expanded="false">
+        <i class="hp-nav__icon" aria-hidden="true"></i>
+      </button>`
+    );
+    item.addEventListener("click", (event) => {
+      toggleExpanded(item);
+    });
+  });
+}
+//\\
+// Find the toggle buttons and add click event listeners
+// to change the state of the toggle
+const level2Buttons = document.querySelectorAll(
+  ".hp-nav--full .hp-nav__toggle"
+);
+if (level2Buttons && level2Buttons.length) {
+  Array.from(level2Buttons).forEach((item, index) => {
+    // Add event listeners to toggle buttons
+    item.addEventListener("click", (event) => {
+      toggleExpanded(item);
+    });
+  });
+}
+// Set the toggle's "aria-expanded" attribute
+function toggleExpanded(toggle) {
+  // If there's no toggle, do nothing else...
+  if (!toggle) return;
+  // ... otherwise, set its "aria-expanded" attribute to the opposite value
+  let newState = 0;
+  if (toggle.getAttribute("aria-expanded") === "true") {
+    newState = false;
+  } else {
+    newState = true;
+  }
+  toggle.setAttribute("aria-expanded", newState);
+  toggle.parentElement.setAttribute("aria-expanded", newState);
+}
+// var subNav = document.querySelector(".cwf-nav--sub");
+// if (subNav) {
+//   var subNavItems = Array.from(subNav?.querySelectorAll(
+//     ".cwf-nav__link"
+//   ));
+//   subNavItems?.forEach(subNavItem => {
+//     if (
+//       !subNavItem.href.includes("https://vcu.edu") &&
+//       !subNavItem.href.includes("https://t4.vcu.edu") &&
+//       !subNavItem.href.includes("https://vcu.staging2.vcu.edu")
+//     ) {
+//       console.log(subNavItem.innerText + " outbound");
+//       subNavItem.classList.add("hp-nav__link--outbound");
+//     }
+//   });
+// }
+// var shortNav = document.querySelector(
+//   ".hp-nav--short"
+// );
+// if (shortNav) {
+//   var shortNavItems = Array.from(
+//     shortNav?.querySelectorAll(
+//       ".hp-nav__list--level-2 .hp-nav__link"
+//     )
+//   );
+//   shortNavItems?.forEach(shortNavItem => {
+//     if (
+//       !shortNavItem.href.includes("https://vcu.edu") &&
+//       !shortNavItem.href.includes("https://t4.vcu.edu") &&
+//       !shortNavItem.href.includes("https://vcu.staging2.vcu.edu")
+//     ) {
+//       console.log(shortNavItem.innerText + " outbound");
+//       shortNavItem.classList.add("hp-nav__link--outbound");
+//     }
+//   });
+// }
+//
+// Find the actionLink in .hp-nav--action
+const actionLinks = document.querySelectorAll(".hp-nav--action a");
+if (actionLinks && actionLinks.length) {
+  Array.from(actionLinks).forEach((actionLink, index) => {
+    // Check if the actionLink exists and its text is "myVCU"
+    if (actionLink && actionLink.textContent.trim() === "myVCU") {
+      const actionLinkText = actionLink.textContent.trim();
+      // Wrap the first two characters in a <span> element
+      const modifiedText = `${actionLinkText.substring(
+        0,
+        2
+      )}<span class="color--gold">${actionLinkText.substring(2)}</span>`;
+      // Update the actionLink's HTML content
+      actionLink.innerHTML = modifiedText;
+    }
+  });
+}
+</script><!-- Compass - Nav JS --><script src="/media/compass/nav/cwf.nav.js"></script><script>
+// Move section title above sub nav. we'll likely want to
+// to duplicate the compass sub nav and work this into there
+// to help minimize content shifts.
+var breadcrumbNavElement = document.querySelector(".cwf-breadcrumb__list");
+if (breadcrumbNavElement) {
+  var breadcrumbNavItems = Array.from(breadcrumbNavElement?.children);
+  var breadcrumbTarget = breadcrumbNavItems[1];
+  console.log(breadcrumbTarget);
+  var subNavElement = document.querySelector(".cwf-nav--sub");
+  var firstSubNavItem = document.querySelector(".cwf-nav--sub")?.querySelector(".cwf-nav__item");
+  if (firstSubNavItem) {
+    var newSubNavItem = document.createElement("li");
+    newSubNavItem.classList.add("cwf-nav__item");
+    // check if item has children
+    var newSubNavLink = document.createElement("a");
+    newSubNavLink.classList.add("cwf-nav__link");
+    if (breadcrumbTarget.childElementCount) {
+      console.log('breadcrumbTarget, has link: ', breadcrumbTarget.firstElementChild);
+      newSubNavLink.innerText = breadcrumbTarget.firstElementChild.innerText;
+      newSubNavLink.href = breadcrumbTarget.firstElementChild.pathname;
+    } else {
+      newSubNavLink.innerText = breadcrumbTarget.innerText;
+      newSubNavLink.href = "#cwf-content";
+      newSubNavItem.classList.add("cwf-nav__item--is-current");
+      console.log('breadcrumbTarget, no link: ', breadcrumbTarget);
+    }
+    newSubNavItem.appendChild(newSubNavLink);
+    firstSubNavItem.parentNode.insertBefore(newSubNavItem, firstSubNavItem);
+  }
+}
+</script><script>
+// keep separated until we know how each will need to be applied
+var subNav = document.querySelector(".cwf-nav--sub");
+if (subNav) {
+  var subNavItems = Array.from(subNav?.querySelectorAll(
+    ".cwf-nav__link"
+  ));
+  subNavItems?.forEach(subNavItem => {
+    if (
+      !subNavItem.href.includes("https://vcu.edu") &&
+      !subNavItem.href.includes("https://www.vcu.edu") &&
+      !subNavItem.href.includes("https://t4.vcu.edu") &&
+      !subNavItem.href.includes("https://vcu.staging2.vcu.edu") &&
+      !subNavItem.href.includes("https://beta.vcu.edu")
+    ) {
+      subNavItem.classList.add("hp-nav__link--outbound");
+    }
+  });
+}
+var shortNav = document.querySelector(
+  ".hp-nav--short"
+);
+if (shortNav) {
+  var shortNavItems = Array.from(
+    shortNav?.querySelectorAll(
+      ".hp-nav__list--level-2 .hp-nav__link"
+    )
+  );
+  shortNavItems?.forEach(shortNavItem => {
+    if (
+      !shortNavItem.href.includes("https://vcu.edu") &&
+      !shortNavItem.href.includes("https://www.vcu.edu") &&
+      !shortNavItem.href.includes("https://t4.vcu.edu") &&
+      !shortNavItem.href.includes("https://vcu.staging2.vcu.edu") &&
+      !shortNavItem.href.includes("https://beta.vcu.edu")
+    ) {
+      shortNavItem.classList.add("hp-nav__link--outbound");
+    }
+  });
+}
+var fullNav = document.querySelector(".hp-nav--full");
+if (fullNav) {
+  var fullNavItems = Array.from(
+    fullNav?.querySelectorAll(".multilevel-linkul-0 li a")
+  );
+  var quicklinkItems = Array.from(
+    fullNav?.querySelectorAll(".hp-nav__column--quicklinks .hp-nav__list--level-2 .hp-nav__item a")
+  );
+  var combinedItems = fullNavItems.concat(quicklinkItems);
+  combinedItems?.forEach((combinedItem) => {
+    if (
+      !combinedItem.href.includes("https://vcu.edu") &&
+      !combinedItem.href.includes("https://www.vcu.edu") &&
+      !combinedItem.href.includes("https://t4.vcu.edu") &&
+      !combinedItem.href.includes("https://vcu.staging2.vcu.edu") &&
+      !combinedItem.href.includes("https://beta.vcu.edu")
+    ) {
+      combinedItem.parentElement.classList.add("hp-nav__link--outbound");
+    }
+  });
+}
+// Quick links outbound
+var quickDropdown = document.querySelector(
+  ".hp-nav--quick"
+);
+if (quickDropdown) {
+  var quickDropdownItems = Array.from(
+    quickDropdown?.querySelectorAll(
+      ".hp-nav__list--level-2 .hp-nav__item a"
+    )
+  );
+  quickDropdownItems?.forEach(quickDropdownItem => {
+    if (
+      !quickDropdownItem.href.includes("https://vcu.edu") &&
+      !quickDropdownItem.href.includes("https://www.vcu.edu") &&
+      !quickDropdownItem.href.includes("https://t4.vcu.edu") &&
+      !quickDropdownItem.href.includes("https://vcu.staging2.vcu.edu") &&
+      !quickDropdownItem.href.includes("https://beta.vcu.edu")
+    ) {
+      quickDropdownItem.classList.add("hp-nav__link--outbound");
+    }
+  });
+}
+// Footer links
+var cwfFooterElement = document.querySelector(".cwf-footer");
+if (cwfFooterElement) {
+  var col1Items = Array.from(
+    cwfFooterElement?.querySelectorAll(".cwf-footer__column--middle li a")
+  );
+  var col2Items = Array.from(
+    cwfFooterElement?.querySelectorAll(".cwf-footer__column--right p a")
+  );
+  var combinedItems = col1Items.concat(col2Items);
+  combinedItems?.forEach((combinedItem) => {
+    if (
+      !combinedItem.href.includes("https://vcu.edu") &&
+      !combinedItem.href.includes("https://www.vcu.edu") &&
+      !combinedItem.href.includes("https://t4.vcu.edu") &&
+      !combinedItem.href.includes("https://vcu.staging2.vcu.edu") &&
+      !combinedItem.href.includes("https://beta.vcu.edu")
+    ) {
+      combinedItem.parentElement.classList.add("hp-nav__link--outbound");
+    }
+  });
+}
+</script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script><script id="owl1script" src="/media/university-relations/marcom---carousels/owl.carousel.min.js" defer></script><script id="owl2script" src="/media/university-relations/marcom---carousels/marcom-carousel-master.js" defer></script><script async="async" defer="defer" src="https://www.youvisit.com/tour/Embed/js3"></script>
+    </body>
+</html>

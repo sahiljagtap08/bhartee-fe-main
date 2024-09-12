@@ -7,7 +7,7 @@ const TermsOfServicePage = () => {
     <div className="container py-16">
       <h1 className="text-4xl font-bold mb-8">Terms of Service</h1>
       <p className="text-xl mb-8">
-        Please read these terms of service carefully before using Bhartee AI's services.
+        Please read these terms of service carefully before using Bhartee AI&apos;s services.
       </p>
       <Card className="mb-8">
         <CardHeader>
@@ -15,7 +15,7 @@ const TermsOfServicePage = () => {
         </CardHeader>
         <CardContent>
           <p>
-            By accessing or using Bhartee AI's services, you agree to be bound by these Terms of Service and all applicable laws and regulations. If you do not agree with any part of these terms, you may not use our services.
+            By accessing or using Bhartee AI&apos;s services, you agree to be bound by these Terms of Service and all applicable laws and regulations. If you do not agree with any part of these terms, you may not use our services.
           </p>
         </CardContent>
       </Card>
@@ -25,7 +25,7 @@ const TermsOfServicePage = () => {
         </CardHeader>
         <CardContent>
           <p>
-            You agree to use Bhartee AI's services only for lawful purposes and in accordance with these Terms of Service. You are prohibited from violating or attempting to violate the security of the Service.
+            You agree to use Bhartee AI&apos;s services only for lawful purposes and in accordance with these Terms of Service. You are prohibited from violating or attempting to violate the security of the Service.
           </p>
         </CardContent>
       </Card>
